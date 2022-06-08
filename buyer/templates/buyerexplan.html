@@ -1,0 +1,306 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Imali.biz{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: 'Hina Mincho', serif;
+      }
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 1.2rem;
+      }
+      .nav-item:hover {
+        color: #a8c634;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.flex-item-left {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+.real{
+font-family: 'Roboto';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+
+}
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+
+.real2{
+font-family: 'Roboto';
+font-size: 30px;
+font-weight: bold;
+margin-left: 6%;
+
+}
+.clicksb{
+position: absolute;
+width: 90%;
+height: 5px;
+background: #C4C4C4;
+}
+.realy{
+font-family: 'Roboto';
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+}
+.invest{
+position: absolute;
+width: 300px;
+height: 400px;
+margin-left: 40%;
+margin-right: 60%;
+background: rgba(196, 196, 196, 0.1);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer{
+  background-color: #010203;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div style="background-color: black; height: 80px;">
+    <nav class="navbar navbar-expand-sm black navbar-dark">
+      <a class="navbar-brand" href="{%url 'home'%}">
+        <img
+          src="{% static 'Images/imalilogo.png' %}"
+          alt="logo"
+          style="width: 90%; margin-left: 30px;"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText" style="background-color: black;">
+        <ul class="navbar-nav mr-auto"></ul>
+        <div>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Land
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'land'%}"
+          >
+            Investors
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Developers          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'buyer'%}"
+          >
+          Buyers
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Data
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="flex-container">
+      <a class="flex-item-left" href="{%url 'buyerexplan'%}">How it works </a>
+      <a class="flex-item-right" href="{%url 'buyerexplan'%}">Read more on  buyers </a>
+      <a class="flex-item-right"href="{%url 'buyerexplan'%}">Buy a property</a>
+    </div>
+    <!-- body code -->
+<div>
+  <h1 class="real">  Feasibility</h1>
+  <p style="text-align:center;">Simplifying real estate</p> 
+  <p style="margin:30px;">Real estate search engine to understand and analyze the value of lands and properties</p>
+  <p style="margin:30px;">Analyzing a real estate project became simpler. Imali.biz technology allows you to deep dive into your due diligence data checking process and takes your decision easier and faster with more  data and assurance</h1>
+    <h1 class="real2">How it works</h1>
+    <div>
+  <p style="margin-left: 6%;; font-weight:bold;">•  1st Step:  Apply in minutes</p>
+  <p style="margin-left: 6%;">-It’s free, fast, and won’t impact your credit score. Once you qualify, receive a home budget and start shopping.</p>
+  <p style="margin-left: 6%; font-weight:bold;">• 2rd Step:  Choose your dream home</p>
+  <p style="margin-left: 6%;">-Don’t settle for less. With Imali.biz, you get to pick the home, and we buy it for you.</p>
+  <p style="margin-left: 6%;font-weight:bold;">3rd Step:  Rent while you prepare to buy</p>
+  <p style="margin-left: 6%;">-You’re not in this alone. Rent the home from us and build your savings while we help you get mortgage-ready.
+  </p>
+</div>
+  <div>
+    <p style="font-weight:bold; text-align: center;">Find, compare and buy hundreds of new & off the plan properties.</p>
+    <p style="margin-left: 10%;; font-weight:bold;">COMPARE PRICES</p>
+    <p style="margin-left: 10%;">Choose with confidence, by comparing prices from all of our available<br> property options to suit your budget.</p>
+    <p style="margin-left: 10%; font-weight:bold;">EXPERT GUIDANCE</p>
+    <p style="margin-left: 10%;">Our specialist Property Consultants can find you the right property<br> tailored to your requirements.</p>
+  </div>
+  <div style="text-align: center; margin-top:-13%; margin-left: 30%;">
+    <p style="font-weight:bold;margin-right:30%;">SAVE YOUR SEARCHES</p>
+    <p style="">Found a property that you love? Easily save your searches to review and compare them  <br>at your convenience</p>
+    <p style=" font-weight:bold;margin-right:30%;">100% INDEPENDENT</p>
+    <p style="">We are completely independent so our advice is in your best interest</p>
+  </div>
+  <p style="font-weight:bold; text-align: center;">Your journey to homeownership starts with us</p>
+  <p style="margin-left:30px; font-weight:bold;">Make homeownership accessible to everyone</p>
+  <p style="margin-left:30px;">Too many of us are unable to buy a home due to high home prices, stagnant wages, and strict mortgage approvals. We believe in leveling the playing field by making it possible to enjoy the benefits of owning a home sooner rather than later.
+  </h1>
+  <h1 class="real">Build your savings</h1>
+  <div>
+    <p style="font-weight:bold; text-align: center;">Find, compare and buy hundreds of new & off the plan properties.</p>
+    <p style="margin-left: 10%;; font-weight:bold;">Complete an application</p>
+    <p style="margin-left: 10%;">It’s free, fast, and won’t impact your credit score. It takes only 5 minutes to pre-qualify..</p>
+    <p style="margin-left: 10%; font-weight:bold;">2. Get approved for a budget</p>
+    <p style="margin-left: 10%;">Once you’re approved, you’ll receive a budget to go home shopping.</p>
+    <p style="margin-left: 10%; font-weight:bold;">3. Choose your dream home</p>
+    <p style="margin-left: 10%;">Partner with an agent to find your dream home. Choose from any home on the<br> market that qualifies.</p>
+  </div>
+  <div style="text-align: center; margin-top:-13%; margin-left: 30%;">
+    <p style="font-weight:bold;margin-right:20%;">SAVE YOUR SEARCHES</p>
+    <p style="">We’ll pay for the home in cash and cover all fees, closing costs,<br> taxes and insurance. All we need is a down payment of 1-2%.</p>
+    <p style=" font-weight:bold;margin-right:30%;">5. Move in and save</p>
+    <p style="">Move into your Imali.biz home and start saving to gradually build up <br>ownership of the home. Most of our customers are able to become<br> mortgage-eligible in less than three years.</p>
+  </div>
+  <p style="margin-left:30px; font-weight:bold;">Buy the home or walk away with savings</p>
+  <p style="margin-left:30px;">At any point you can choose to either buy back the home with the money you’ve saved or move out and cash out your savings
+    <p style="margin-left:30px; font-weight:bold;">Stepping into your new home</p>
+    <p style="margin-left:30px;">Checking finances,Checklist of desired house, Research, Site visits,Shortlisting, Finalizing, Negotiating, Closure of deal, Organizing documents,Applying for home loan,Property registration,Interior decoration
+      Moving day
+      <h1 style="font-weight:bold;margin-left:10%;">Here’s how we bring you home</h1>
+      <h5 style="margin-left:15%;">Tips on buying a new home</h5>
+      <div style="margin-left: 10%">
+        <p>1. How is my deposit protected</p>
+        <p>2. What to know about making selections for finishing and upgrades</p>
+        <p>3. What happens if my closing/ occupancy data gets delayed?</p>
+        <p>4. What if my builder doesn’t complete my contract home</p>
+        <p>5. How can I keep track of important dates until my home is completed?</p>
+      </div>
+    <h1 class="real">Wish List</h1>
+    <p style="text-align:center;">We guide first-time homebuyers to approval faster.</p>
+    <p style="margin-left:10%;">Our “Wish List” is offered as a free service with your home purchase. With just a few clicks of your mouse, you can start putting together all of the design elements that will make your dream 
+      home a reality.
+      </p>
+      <p style="margin-left:10%;">From paint color to bathroom fixtures, flooring to countertops, you can itemize all the things you’d like to include in your new home – all before you even visit the eQ Design Studio.</p>
+      
+      <div class="footerspacer"></div>
+      <div class="container-fluid">
+          <div class="row">
+            <footer class="footer" style="color: white;">
+          
+              <!-- Right -->
+              <div>
+          <p>
+            
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+              <!-- Links -->
+              <h6 class="text-uppercase fw-bold mb-4">
+                Contact
+              </h6>
+              <p><i class="fas fa-home me-3"></i> Kicukiro Kigali Rwanda</p>
+              <p>
+                <i class="fas fa-envelope me-3"></i>
+                info@imali.biz
+              </p>
+              <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
+            </div>
+            <img
+            src="{% static 'Images/imalilogo.png' %}"
+            alt="logo"
+            style="width: 8%; margin-right: 100px;"
+          />
+            &copy; © Copyright 2010 - 2021, IMALI.biz Ltd</p>
+          </footer>
+        </div>
+      
+      </div>
+    
+  <!-- End of .container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- first page -->
+
+  </body>
+</html>

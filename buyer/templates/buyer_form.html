@@ -1,0 +1,351 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BuyRegistrationForm</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <style>
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 1.2rem;
+      }
+      .nav-item:hover {
+        color: #a8c634;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+}
+.invest{
+position: absolute;
+width: 400px;
+/* height: 300px; */
+margin-left: 60%;
+margin-top: 10%;
+background: rgba(196, 196, 196, 0.1);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.flex-item-left {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+.real{
+font-family: 'Roboto';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+
+}
+      .head {
+        color: #000000;
+        font-size: 25px;
+        text-align: center;
+        margin-bottom: 40px;
+        padding-top: 40px;
+      }
+
+      .container {
+        /* margin-left: 200px; */
+        width: 600px;
+        font-size: 15px;
+        border-radius: 10px;
+        margin-right: 57%;
+        border: 0.5px solid #000000;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      }
+      input {
+        width: 100%;
+        outline: none;
+        border: 1px solid;
+        font-size: 13px;
+        padding: 6px 8px;
+        border-radius: 5px;
+        background-color: white;
+      }
+      .recovery{
+    display: flex;
+    width:  140%;
+  }
+  .keep-logged> p{
+    margin-left: -30%;
+    width: 100%;
+    margin-top: 1%;
+  }
+  .keep-logged > input{
+    margin-left: -39%;
+    margin-top: 2%;
+  }
+  .keep-logged{
+    display: flex;
+    width: 50%;
+   }
+  .button {
+        width: 40%;
+        height: 60%;
+        margin-right: 60%;
+        color: white;
+        background: #0FA958;
+       border: 1px solid #0FA958;
+       border-radius: 30px;
+        border-radius: 20px;
+      }
+  .button1{
+    width: 10%;
+        height: 20%;
+        margin-right: 160%;
+        margin-top: 15%;
+        color: #0FA958;
+       border: 1px solid #0FA958;
+        border-radius: 10px;
+        margin-left: 590px;
+        margin-top:-40px
+  }
+  .real{
+font-family: 'Roboto';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+
+}
+.button2{
+        width: 10%;
+        height: 20%;
+        margin-right: 160%;
+        margin-top: 15%;
+        color: #0FA958;
+       border: 1px solid #0FA958;
+        border-radius: 10px;
+        margin-left: 590px;
+        margin-top:-40px
+  }
+  .card-img-top{
+    width: 100%;
+  }
+
+  table, td, th {
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td {
+  text-align: center;
+}
+      .footer{
+  background-color: #010203;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 30px;
+  
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <!-- Navbars -->
+    <div style="background-color: black; height: 80px;">
+      <nav class="navbar navbar-expand-sm black navbar-dark">
+        <a class="navbar-brand" href="{%url 'home'%}">
+          <img
+            src="{% static 'Images/imalilogo.png' %}"
+            alt="logo"
+            style="width: 90%; margin-left: 30px;"
+          />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarText"
+          aria-controls="navbarText"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText" style="background-color: black;">
+          <ul class="navbar-nav mr-auto"></ul>
+          <div>
+            <a
+              style="text-decoration: none;"
+              class="nav-item"
+              href="{%url 'land'%}"
+            >
+            Land
+            </a>
+            <a
+              style="text-decoration: none;"
+              class="nav-item"
+              href="{%url 'investor'%}"
+            >
+              Investors
+            </a>
+            <a
+              style="text-decoration: none;"
+              class="nav-item"
+              href="{%url 'home'%}"
+            >
+            Developers          </a>
+            <a
+              style="text-decoration: none;"
+              class="nav-item"
+              href="{%url 'buyer'%}"
+            >
+            Buyers
+            </a>
+            <a
+              style="text-decoration: none;"
+              class="nav-item"
+              href="{%url 'home'%}"
+            >
+            Data
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="flex-container">
+        <a class="flex-item-left" href="{%url 'landexplanation'%}">How it works </a>
+        <a class="flex-item-right" href="{%url 'landexplanation'%}">Mortgage Calculator</a>
+        <a class="flex-item-right"href="{%url 'landexplanation'%}">Buy a property</a>
+      </div>
+      <h1 class="head">Dear  User, congraturations on selecting  your new appartment, now you can buy or rent</h1>    <!-- <form section -->
+    <div class="container">
+      <h1 class="head">Buy your beautiful house</h1>
+      <form method="POST" enctype="multipart/form-data">
+        {%csrf_token%} {{form.as_p}}
+        <p style="color:#0FA958;">To check your Land api click *561# provided by RLMUA</p>
+        <div class="recovery">
+          <div class="keep-logged">
+        
+    </div>
+    <input type="submit" value="Submit" class="button" />
+      </form>
+    </div>
+    </div>
+    <div style="text-align: center;margin-top:-830px; margin-left: 500px;">
+      <img src="{% static 'Images/buy.jpg' %}" style="border-radius: 30px; width:80%;margin-left: 150px;" class="card-img-top" alt="...">
+      <div class="row" style="padding:2px;margin-left: 135px;">
+        <div class="column">
+          <img src="{% static 'Images/buy1.jpg' %}" alt="Snow" style="width:80%">
+        </div>
+        <div class="column">
+          <img src="{% static 'Images/buy2.jpg' %}" alt="Forest" style="width:80%">
+        </div>
+        <div class="column">
+          <img src="{% static 'Images/buy3.jpg' %}" alt="Mountains" style="width:80%">
+        </div>
+    </div>
+  </div>
+  <a href=" {%url 'land'%}" class="btn bg-success" style="color:white; text-align: center;margin-left: 900px;"> Check Our Land</a>
+
+  <!-- The land on Master plan -->
+<div >
+  <h1 class="real"> The land on Master plan </h1>
+  <p style="margin-left:10%;">A partment house plan: #4 Floors</p>
+  <img src="{% static 'Images/image14.png' %}" class="card-img-top" style="width:55%;margin-right: 40%;" alt="...">
+  <a href="" class="btn bg-success" style="color:white; text-align: center;margin-left: 900px; margin-top:-85%;">For Sale</a>
+  <h1 style="margin-left: 900px; margin-top:-40%;">$5000</h1>
+  <div style="margin-top:-9%;">
+  <button style="margin-left: 75%; width: 10%;border:1px solid #0FA958; "> Share
+    <img
+    src="{% static 'Images/fa_share-square-o.png' %}"
+    alt="logo"
+    style="width: 15%;"
+  />
+  </button>
+</div>
+<div class="invest">
+  <h2 style="text-align:center;">Architecture Details</h2>
+  <p>Unit <span style="margin-left:40%">777 </span> </p>
+  <p>Location   <span style="margin-left:20%"> Kicukiro, Kigali</span> </p>
+  <p>Year Completed  <span style="margin-left:20%">2021 </span> </p>
+  <p>Floors   <span style="margin-left:40%">8 </span> </p>
+  <p>Price <span style="margin-left:40%">$5000 </span> </p>
+  <p>Bed rooms <span style="margin-left:35%">V</span> </p>
+  <p>Kitchen  <span style="margin-left:40%">20 </span> </p>
+  <p>Salon <span style="margin-left:40%">15 </span> </p>
+  <p>Storage <span style="margin-left:38%">V</span> </p>
+</div>
+</div>
+<div>
+  <div style="text-align:center;margin-top: 45%;">
+    <h1>Mortgage Calculator</h1>
+  </div>
+
+  <div class="footerspacer"></div>
+  <div class="container-fluid">
+      <div class="row">
+        <footer class="footer" style="color: white;">
+      
+          <!-- Right -->
+          <div>
+      <p>
+        
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p><i class="fas fa-home me-3"></i> Kicukiro Kigali Rwanda</p>
+          <p>
+            <i class="fas fa-envelope me-3"></i>
+            info@imali.biz
+          </p>
+          <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
+        </div>
+        <img
+        src="{% static 'Images/imalilogo.png' %}"
+        alt="logo"
+        style="width: 8%; margin-right: 100px;"
+      />
+        &copy; © Copyright 2010 - 2021, IMALI.biz Ltd</p>
+      </footer>
+    </div>
+  
+  </div>
+
+</div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

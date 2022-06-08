@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hero_profile</title>
+    <style>
+      body {
+        background-color: #4b96b1;
+      }
+      #profile {
+        color: #4b96b1;
+        font-weight: bold;
+        font-size: 200%;
+      }
+      p,
+      img,
+      h2 {
+        padding-left: 30%;
+      }
+      img {
+        width: 50%;
+        height: 20%;
+      }
+      .container {
+        background-color: white;
+        margin-left: 250px;
+        width: 600px;
+        /* padding: 100px; */
+        font-size: 20px;
+        border-radius: 30px;
+        margin-right: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="profile">HERO PROFILE</p>
+      <img src="{{hero.profile.url}}" />
+      <p>Title: {{hero.title}}</p>
+      <p>Hero Names: {{hero.full_name}}</p>
+      <p>Address1: {{hero.address1}}</p>
+      <p>Address: {{hero.address2}}</p>
+      <p>Town: {{hero.town}}</p>
+      <p>Region Or Province: {{hero.region_or_province}}</p>
+      <p>Country: {{hero.country}}</p>
+      <p>Personal Email Address: {{hero.personal_email_address}}</p>
+      <p>Mpowa Email Address: {{hero.mpowa_email_address}}</p>
+      <p>Mobile Phone number: {{hero.mobile_phone_number}}</p>
+      <p>Status: {{hero.status}}</p>
+    </div>
+  </body>
+</html>

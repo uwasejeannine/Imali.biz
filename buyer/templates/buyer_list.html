@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Hero-list</title>
+    <style>
+      h1 {
+        color: #000000;
+        text-align: center;
+      }
+      .table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        width: 400px;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+        /* margin-left: 9%; */
+        margin-top: 2%;
+      }
+      th {
+        background-color: #050505;
+        color: white;
+        text-align: center;
+        padding: 13px 20px;
+      }
+      td {
+        padding: 10px 20px;
+        text-align: center;
+      }
+      tbody {
+        border-bottom: 1px solid #dddddd;
+      }
+      tbody:last-of-type {
+        border-bottom: 2px solid #020202;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Buyers List</h1>
+    <table class="table">
+      <tr>
+        <th>Full Name</th>
+        <th>Email Addres</th>
+        <th>Phone Number</th>
+        <th>Agent Contract</th>
+        <th>Your ID</th>
+        <th>Down Payment</th>
+        <th>Signature</th>
+        <th>Profile</th>
+        <th>Edit</th>
+      </tr>
+      {%for buyer in buyers%}
+      <tbody>
+        <tr>
+          <td>{{buyer.full_name}}</td>
+          <td>{{buyer.email_addres}}</td>
+          <td>{{buyer.phone_number}}</td>
+          <td>{{buyer.agent_contract}}</td>
+          <td>{{buyer.your_id}}</td>
+          <td>{{buyer.down_payment}}</td>
+          <td>{{buyer.signature}}</td>
+          <td>
+            <a href="{% url 'buyer_profile' id=buyer.id %}">Profile</a>
+          </td>
+          <td><a href="{% url 'edit_buyer' id=buyer.id %}">Edit</a></td>
+        </tr>
+        </tr>
+      </tbody>
+      {%endfor%}
+    </table>
+  </body>
+</html>

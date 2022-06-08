@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>hero_profile</title>
+    <style>
+      body {
+        background-color: #4b96b1;
+      }
+      #profile {
+        color: #4b96b1;
+        font-weight: bold;
+        font-size: 200%;
+      }
+      p,
+      img,
+      h2 {
+        padding-left: 30%;
+      }
+      img {
+        width: 50%;
+        height: 20%;
+      }
+      .container {
+        background-color: white;
+        margin-left: 250px;
+        width: 600px;
+        /* padding: 100px; */
+        font-size: 20px;
+        border-radius: 30px;
+        margin-right: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <p id="profile">Buyer Profil</p>
+      <p>{{buyer.full_name}}</p>
+      <p>{{buyer.email_addres}}</p>
+      <p>{{buyer.phone_number}}</p>
+      <p>{{buyer.agent_contract}}</p>
+      <p>{{buyer.your_id}}</p>
+      <p>{{buyer.down_payment}}</p>
+      <p>{{buyer.signature}}</p>
+    </div>
+  </body>
+</html>

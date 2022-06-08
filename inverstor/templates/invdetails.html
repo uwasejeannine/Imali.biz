@@ -1,0 +1,361 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Imali.biz{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: 'Hina Mincho', serif;
+      }
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 1.2rem;
+      }
+      .nav-item:hover {
+        color: #a8c634;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.flex-item-left {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+.real{
+font-family: 'Roboto';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+
+}
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+
+.real2{
+font-family: 'Roboto';
+font-size: 30px;
+font-weight: bold;
+margin-left: 5%;
+
+}
+.clicksb{
+position: absolute;
+width: 90%;
+height: 5px;
+background: #C4C4C4;
+}
+.realy{
+font-family: 'Roboto';
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+}
+.invest{
+position: absolute;
+width: 300px;
+height: 400px;
+margin-left: 40%;
+margin-right: 60%;
+background: rgba(196, 196, 196, 0.1);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer{
+  background-color: #010203;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 430px;
+  
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div style="background-color: black; height: 80px;">
+    <nav class="navbar navbar-expand-sm black navbar-dark">
+      <a class="navbar-brand" href="{%url 'home'%}">
+        <img
+          src="{% static 'Images/imalilogo.png' %}"
+          alt="logo"
+          style="width: 90%; margin-left: 30px;"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText" style="background-color: black;">
+        <ul class="navbar-nav mr-auto"></ul>
+        <div>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Land
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'land'%}"
+          >
+            Investors
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Developers          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'buyer'%}"
+          >
+          Buyers
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Data
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="flex-container">
+      <a class="flex-item-left" href="{%url 'investorexplanation'%}">Viability</a>
+      <a class="flex-item-right" href="{%url 'investorexplanation'%}">How it works </a>
+      <a class="flex-item-right"href="{%url 'investorexplanation'%}">Invest in Property</a>
+    </div>
+    <!-- body code -->
+<div>
+  <h1 class="real">Do you want an easier way to invest in property?</h1>  
+  <p style="margin:30px;">Imali.biz is a platform that provides a simple and low cost way to access the property market.It’s the new, easier way to invest in property.</p>
+  <p style="margin:30px;">Choose which property to invest in with Imali.biz (or use Smart Invest). Our range of properties is carefully selected by our specialist Property team based on growth potential.</p>
+    <h1 class="real2">Property details include:</h1>
+    <div style="margin-left:5%;">
+  <p>• Independent property valuations </p>
+  <p>• Forecasted cash flows</p>
+  <p>•	Estimated net rental income and yield
+  </p>
+</div>
+<h1 class="real2">Why choose imali.biz</h1>
+    <div style="margin-left:5%;">
+  <p>•  Simplicity</p>
+  <p>• Select your property and within minutes you can own house in an investment property.</p>
+  <p>•	Finally - Access to Property Market</p>
+  <p>•Feeling locked out of the property market? With Bricks from under 10000Frw, now there’s an affordable way to invest.
+  </p>
+</div>
+</div>
+<h1 class="real">How Smart Invest Works</h1>  
+<p style="text-align: center;">A smart, affordable way to invest in the property market.</h1>
+  <div style="margin: 5%;">
+ <p onclick="myFunction()">Invest</p>
+     <div class="clicksb">
+      <div id="myDIV">
+        <h1 class="real2">Property details include:</h1>
+        <div style="margin-left:5%;">
+      <p>• Independent property valuations </p>
+      <p>• Forecasted cash flows</p>
+      <p>•	Estimated net rental income and yield
+      </p>
+    </div>
+    <img
+    src="{% static 'Images/Invest.png' %}"
+    alt="logo"
+    style=" border-radius: 5%; width: 17%;margin-left: 70%; margin-top:-16%;"
+  />
+      </div>
+    <p onclick="myFunction2()">Grow</p>
+    <div class="clicksb">
+    <div id="myDIV2">
+      <h1 class="real2">Property details include:</h1>
+      <div style="margin-left:5%;">
+    <p>• We'll invest your money in Bricks in properties, selected by our specialist team based on their growth potential</p>
+    <p>• Receive regular updates on how your portfolio is performing.</p>
+    <p>•	Earn your share of any rent, after expenses, paid monthly, automatically reinvested. </p>
+    <p>• As the value of the property changes, so does the value of your Bricks </p>
+  </div>
+  <img
+    src="{% static 'Images/Grow.png' %}"
+    alt="logo"
+    style=" border-radius: 5%; width: 20%;margin-left: 75%; margin-top:-16%;"
+  />
+</div>
+<p onclick="myFunction3()">Withdraw</p>
+    <div class="clicksb">
+    <div id="myDIV3">
+      <h1 class="real2">Property details include:</h1>
+      <div style="margin-left:5%;">
+    <p>• To withdraw your money, disable Smart Invest and sell your Bricks.</p>
+    <p>• Simply set the sale price and the amount you’d like to sell. Other investors can then buy them</p>
+    <p>• As soon as your Bricks are sold, you can withdraw your money (including any capital returns)</p>
+  </div>
+  <img
+    src="{% static 'Images/Withdraw.png' %}"
+    alt="logo"
+    style=" border-radius: 5%; width: 22%;margin-left: 75%; margin-top:-16%;"
+  />
+</div>
+<h1 class="real">Flexible funding for companies</h1>  
+<p style="text-align: center;">At imali.biz we help you obtain financing through our platform</h1>
+  
+  <div style="margin-left:5%;">
+<p>Our specialist property team will take care of all the hard work so you can sit back and watch your portfolio grow </p>
+<p>Simply start by choosing how much you’d like to invest.</p>
+<p>• Properties are chosen based on their growth potential</p>
+<p>•Choose how much you’d like to invest monthly via direct debit</p>
+<p>• Receive regular updates on how your portfolio is performing</p>
+<p>• Our aim is to generate returns that outperform the Australian 
+  property market. <br>We measure this annually against the 
+  CoreLogic Home Value Index
+</p>
+<p>• Ability to skip a month or cancel</p>
+<img
+    src="{% static 'Images/Flexible.png' %}"
+    alt="logo"
+    style="width: 30%;margin-left: 75%; margin-top:-40%;"
+  />
+  <a href="{%url 'investor'%}" class="p-3 mb-2 bg-success text-white" style="margin-left:81%; text-decoration: 
+  none; margin-top: -5%;">Ckeck more House</a>
+
+
+</div> 
+       <!--  code  -->
+       <div>
+       <h1 class="real" > Steps on How Smart Invest works</h1>  
+       <p style="margin-left: 10%;">1: Our specialist property team carefully select a range of high growth potential properties</p>
+       <p style="margin-left: 10%;">2: Set a monthly amount and Smart Invest buys and reinvests any distributions in Bricks that we expect to outperform the 
+        <br>Australian residential property market. We measure this annually against the CoreLogic Home Value Index.</p>
+       <p style="margin-left: 10%;">3: We'll take care of everything else and you'll receive your cut of the rent, after expenses, automatically reinvested</p>
+       <p style="margin-left: 10%;">4: As property prices change so does the value of your House</p>
+       <p style="margin-left: 10%;">5: When the time comes, you can put your house up for sale</p>
+       </div>
+       <div>
+        <h1 class="real" > We manage your project with our investors</h1>  
+        <p style="margin-left: 10%;">Imali.biz is the leading participative financing platform in Rwanda.</p>
+        <p style="margin-left: 10%;">•More than 10 projects financed in Rwanda within the three business lines.</p>
+        <p style="margin-left: 10%;">•Users from over 4 different nationalities.</p>
+        <p style="margin-left: 10%;">•We are already more than 100 users on the platform. </p>
+        <p style="margin-left: 10%; font-weight: bold;">Fast and easy process: </p>
+        <p style="margin-left: 10%;">Imali.biz is responsible for raising and distributing profits and capital to investors.
+        </p>
+        </div>
+        <div>
+          <h1 class="real" >Investment opportunities</h1>
+          <p style="font-weight: bold;">What is crowdfunding ?</p>
+  <p>
+    The word Crowdfunding comes from the union between the words "crowd" (collective or group) and "Funding" (to finance). Crowdfunding refers to collective or collaborative investment: many small investors coming together to invest in a project.     
+</p>
+    <p style="font-weight: bold;">What is imali.biz</p>
+  <p>Imali.biz is the meeting point between small and medium investors and developers. Imali.biz is the crowdfunding platform  that has democratized investment in the real estate sector, allowing any investor to invest as large investment funds do butwith small amounts and without worrying about the paperwork and procedures associated with this type of investment
+  </p>
+  <div style="text-align: center;">
+  <a href="{%url 'investor'%}" class="p-3 mb-2 bg-success text-white" style="text-decoration: 
+  none; margin-top: -5%;">I want to invest now</a></div>
+        </div>
+      </div>
+  <script>
+    function myFunction() {
+      var x = document.getElementById("myDIV");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function myFunction2() {
+      var x = document.getElementById("myDIV2");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    function myFunction3() {
+      var x = document.getElementById("myDIV3");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    
+  <!-- End of .container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- first page -->
+
+  </body>
+</html>
