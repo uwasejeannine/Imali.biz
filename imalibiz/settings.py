@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'land',
     'buyer',
     'inverstor',
+    'developer',
     'phonenumber_field',
     'location_field.apps.DefaultConfig',
     'core'
@@ -127,6 +128,9 @@ USE_TZ = True
 STATIC_URL = 'static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field

@@ -1,0 +1,334 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Imali.biz{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: 'Hina Mincho', serif;
+      }
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 1.2rem;
+      }
+      .nav-item:hover {
+        color: #a8c634;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.flex-item-left {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+.real{
+font-family: 'Roboto';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+
+}
+#myDIV {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+#myDIV2 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+#myDIV3 {
+  width: 100%;
+  padding: 50px 0;
+  background-color: rgb(253, 253, 253);
+  margin-top: 10px;
+}
+
+.real2{
+font-family: 'Roboto';
+font-size: 30px;
+font-weight: bold;
+margin-left: 6%;
+
+}
+.clicksb{
+position: absolute;
+width: 90%;
+height: 5px;
+background: #C4C4C4;
+}
+.realy{
+font-family: 'Roboto';
+text-align: center;
+font-size: 25px;
+font-weight: bold;
+}
+.invest{
+position: absolute;
+width: 300px;
+height: 400px;
+margin-left: 40%;
+margin-right: 60%;
+background: rgba(196, 196, 196, 0.1);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer{
+  background-color: #010203;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div style="background-color: black; height: 80px;">
+    <nav class="navbar navbar-expand-sm black navbar-dark">
+      <a class="navbar-brand" href="{%url 'home'%}">
+        <img
+          src="{% static 'Images/imalilogo.png' %}"
+          alt="logo"
+          style="width: 90%; margin-left: 30px;"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText" style="background-color: black;">
+        <ul class="navbar-nav mr-auto"></ul>
+        <div>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Land
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'land'%}"
+          >
+            Investors
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'developer'%}"
+          >
+          Developers          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'buyer'%}"
+          >
+          Buyers
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Data
+          </a>
+        </div>
+      </div>
+    </nav>
+    <div class="flex-container">
+        <a class="flex-item-left" href="{%url 'develoxplan'%}">How it works </a>
+        <a class="flex-item-right" href="{%url 'develoxplan'%}">Read more on  Developer</a>
+        <a class="flex-item-right"href="{%url 'develoxplan'%}">Materials needed</a>
+      </div>
+    <!-- body code -->
+<div>
+  <h1 class="real">Who is a developer</h1>
+  <p style="margin:30px;">Imali.biz developer is an individual or business responsible for the financing, building, marketing, and management of any real estate development project.A developer may purchase a property or partner with its owners to rebuild on the land, often with the help of real estate development companies.</p>
+  <p style="margin:30px;">Developers will often manage the construction of a new build even though they are not general contractors. Real estate development requires no authorization or training but 
+    some developers receive formal education as real estate brokers, real estate agents, and general contractors, all of which require some level of state-mandated licensing.</h1>
+  
+    <h1 class="real">Get the chance to sell to everyone</h1>
+  <p style="margin:30px;">By tokenizing part of your project, you reach a completely new market.You now have a solution for every customer. If the project is not financially viable, you can refer them to a tokenized unit.
+    This way, everyone gets the chance to invest in your project.</p>
+
+    <h1 class="real">Build a recurring customer portfolio.</h1>
+  <p style="margin:30px;">Buying property every year is for the happy few. Whereas repeat purchases used to be less common because of the large entry amounts, with real estate you can get your loyal customers to invest again more quickly. Build up a loyal investor base to ensure sales in your developments</p>
+  
+
+  <h1 class="real">Low cost, low risk.</h1>
+  <p style="margin:30px;">The (partial) tokenization of real estate does not have to be capital intensive. Immotokens has developed a unique model that allows you to tokenize a project with little cost, risk, or commitment. Contact us and we will gladly discuss the options and conditions with you</p>
+
+  <h1 class="real">What does such cooperation look like?</h1>
+  <p style="margin:30px;">Immotokens has all the knowledge and experience in-house to tokenize a project. Immotokens takes care of your legal, technological, and regulatory affairs. We offer you an all-in solution to tokenize your project. For the commercialization of the project, there are several options. Feel free to contact us to discuss the different options</p>
+
+  <h1 style="margin:30px; font-weight:bold;font-size: 20px;">Construction costs RWF/sqft</h1>
+  <p style="margin:30px;">You can estimate the construction cost for a building project in the Rwanda by using our construction cost data</p>
+
+  <h1 class="real">Do you want to be came a developer with Imali.biz</h1>
+  <p style="text-align:center; font-weight:bold;">Becoming a real estate developer usually requires a bit of experience in a real-estate related field. Here are some tips on becoming a real estate developer.
+</p>
+<div style="margin:30px;">
+    <p> <span style="font-weight:bold;">Use your knowledge to find your space in the market</span>. When you’re starting out in this field you want to establish your expertise in one area. You can concentrate on one type of real estate (either commercial or residential projects) or even one step in the real estate development process, like renovations to existing buildings or property management. Consider your relationships and knowledge within the field, and choose a concentration that you’ll be able to excel in.
+    </p>
+    <p> <span style="font-weight:bold;">Study up on real estate regulations. </span>Real estate professionals need to learn the long list of state and local regulations and rules for buildings to be proficient in their jobs. These can include zoning requirements from the local government or national environmental codes. Knowing these rules can prevent you from wasting time on property that is not viable. It also means that you can maintain your buildings in accordance with the latest safety codes.
+    </p>
+    <p> <span style="font-weight:bold;">Collaborate with people you trust.</span> Real estate development is a highly collaborative process that requires people to work together across many different disciplines. From the attorneys you work with to structure your business to the architects designing your buildings, a well-rounded real estate development team will include different reliable professionals that can help in each step of the property development process.
+    </p>
+    <p> <span style="font-weight:bold;">Work with real estate investors.</span> Real estate development requires a large amount of capital investment to purchase worthwhile properties. More likely than not, most real estate developers will not be able to finance a project all by themselves, so you will need to find investors. Build a portfolio of successful past real estate projects, and make sure to network as much as possible.
+    </p>
+    <p> <span style="font-weight:bold;">Research the real estate market.</span> Know the demographics of any established or up-and-coming areas you might be interested in. For instance, if you’re building in an area full of retirees looking to downsize, you’d probably want to purchase land for a development of small single-family homes rather than townhouses or condos, which are better for young families.A Note on Real Estate Investment    
+    </p>
+    <p> All investments, including real estate investments, come with inherent risks which may involve the depreciation of assets, financial losses, or legal ramifications. The information presented in this article is for educational, informational, and referential purposes only. Consult a licensed real estate or financial professional before making any legal or financial commitments. 
+    </p>
+    <a> Read more<span style="color:#0A87FB;"></a>
+    <a href="https://www.masterclass.com/articles/what-is-a-real-estate-developer#what-does-a-real-estate-developer-do"> https://www.masterclass.com/articles/what-is-a-real-estate-developer#what-does-a-real-estate-developer-do</a>
+</div>
+
+  
+    <!-- Footer -->
+    <div class="footerspacer"></div>
+    <div class="container-fluid">
+        <div class="row">
+          <footer class="footer" style="color: white;">
+        
+            <!-- Right -->
+            <div>
+              
+          <section class="">
+            <div class="container text-center text-md-start mt-5">
+              <!-- Grid row -->
+              <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                  <!-- Content -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    <i class="fas fa-gem me-3"></i>Imali.biz ltd
+                  </h6>
+                  <p>
+                    Smart apps to Match stakeholders in real estate to the buyer and sort out the inefficiencies of value chain in housing supply.                </p>
+                </div>
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Services: 
+                  </h6>
+                  <p>
+                    <a href="{%url 'land'%}" class="text">Land</a>
+                  </p>
+                  <p>
+                    <a href="{%url 'investor'%}" class="text">Investor</a>
+                  </p>
+                  <p>
+                    <a href="{%url 'investor'%}" class="text">Developer</a>
+                  </p>
+                  <p>
+                    <a href="{%url 'buyer'%}" class="text">Buyer</a>
+                  </p>
+                </div>
+                
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Useful links
+                  </h6>
+                  <p>
+                    <a href="#!" class="text-reset">Pricing</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Settings</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Orders</a>
+                  </p>
+                  <p>
+                    <a href="#!" class="text-reset">Help</a>
+                  </p>
+                </div>
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                  <!-- Links -->
+                  <h6 class="text-uppercase fw-bold mb-4">
+                    Contact
+                  </h6>
+                  <p><i class="fas fa-home me-3"></i> Kicukiro Kigali Rwanda</p>
+                  <p>
+                    <i class="fas fa-envelope me-3"></i>
+                    info@imali.biz
+                  </p>
+                  <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
+                </div>
+              </div>
+         <br><br><br>
+        
+        <p>
+          <img
+          src="{% static 'Images/imalilogo.png' %}"
+          alt="logo"
+          style="width: 8%; margin-right: 100px;"
+        />
+          &copy; © Copyright 2010 - 2021, IMALI.biz Ltd</p>
+        </footer>
+      </div>
+  
+    </div>
+  <!-- End of .container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- first page -->
+
+  </body>
+</html>

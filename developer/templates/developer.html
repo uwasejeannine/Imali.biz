@@ -1,3 +1,4 @@
+
 {% load static %}
 
 <!DOCTYPE html>
@@ -58,23 +59,6 @@ font-size: 30px;
 font-weight: bold;
 
 }
-.realy{
-font-family: 'Roboto';
-text-align: center;
-font-size: 25px;
-font-weight: bold;
-}
-.invest{
-position: absolute;
-width: 300px;
-height: 400px;
-margin-left: 40%;
-margin-right: 60%;
-background: rgba(196, 196, 196, 0.1);
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
 .footer{
   background-color: #010203;
   bottom: 0;
@@ -87,6 +71,73 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 .footer a{
   color: white;
   text-decoration: none;
+}
+.button {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  color: white;
+  background-color: black;
+      }
+.column {
+  float: left;
+  width: 33.3%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        width: 500px;
+        box-shadow: 0 0 20px #0FA958;
+        margin-left: 15%;
+        margin-top: 2%;
+      }
+      th {
+        background-color: #0FA958;
+        color: white;
+        text-align: center;
+        padding: 13px 20px;
+      }
+      td {
+        padding: 20px 30px;
+        text-align: center;
+      }
+      tbody {
+        border-bottom: 1px solid #dddddd;
+      }
+      tbody:last-of-type {
+        border-bottom: 2px solid #ffffff;
+      }
+      a {
+        text-decoration: none;
+      }
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
 }
 @media (max-width: 800px) {
   .flex-container {
@@ -122,14 +173,14 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           <a
             style="text-decoration: none;"
             class="nav-item"
-            href="{%url 'home'%}"
+            href="{%url 'land'%}"
           >
           Land
           </a>
           <a
             style="text-decoration: none;"
             class="nav-item"
-            href="{%url 'home'%}"
+            href="{%url 'investor'%}"
           >
             Investors
           </a>
@@ -142,7 +193,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
           <a
             style="text-decoration: none;"
             class="nav-item"
-            href="{%url 'home'%}"
+            href="{%url 'buyer'%}"
           >
           Buyers
           </a>
@@ -157,72 +208,60 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       </div>
     </nav>
     <div class="flex-container">
-      <a class="flex-item-left" href="{%url 'landexplanation'%}">Feasability</a>
-      <a class="flex-item-right" href="{%url 'landexplanation'%}">Desirability</a>
-      <a class="flex-item-right"href="{%url 'landexplanation'%}">Viability</a>
+      <a class="flex-item-left" href="{%url 'develoxplan'%}">How it works </a>
+      <a class="flex-item-right" href="{%url 'develoxplan'%}">Read more on  Developer</a>
+      <a class="flex-item-right"href="{%url 'develoxplan'%}">Materials needed</a>
     </div>
     <!-- body code -->
 <div>
-  <h1 class="real">Land</h1>  
-  <p style="text-align:center;">Real estate search engine to understand and analyze the value of lands and properties </p>
-  <p style="font-weight: bold;margin:30px;">All the data in one place with one click</p>
-  <p style="margin:30px;">Analyzing a real estate project became simpler. Imali.biz technology allows you to deep dive into your due diligence data checking process and takes your decision easier and faster with
-    more data and assurance</p>
-    <h1 class="real">How does it work?</h1>
-    <div style="margin:30px;">
-    <p style="font-weight: bold;">Aggregation:</p>
-  <p>Imali.biz search engine collects data 24/7 from dozens of sources into one platform. This data includes insights about the actual status of the property, delivered building permits in the area, recent deals made around the address, the average price per square, and statistics. You will also find assessors’ 
-    reports, legal insights, public transportation, and demographic data.
-</p>
-    <p style="font-weight: bold;">Digitization</p>
-  <p>By leveraging automated processes, machine learning, and artificial intelligence, the imali.biz system generates data from offline sources. Thanks to automated processes and AI, imali.biz automatically updates its maps, schemas, and PDF links, such as building rights policies, into future urban plans, which allows us to create unique data.
-</p>
-    <p style="font-weight: bold;">Standardization</p>
-  <p>Creating an ID for every parcel and building on the Imali.biz platform. Just like that, in one click, you could work with all the data we gathered from different sources, added to the data we created. Thanks to this work, you will understand your real estate projects better, and gain insights and in-depth knowledge that doesn't exist anywhere else.</p>
-    <p style="font-weight: bold;">Land owner match with stakeholders</p>
-  <p>•	Land purchase costs </p>
-  <p>•	We look for sites, land or plots that either have planning permission, or other significant development potential. This also includes existing houses with building plots to the side or rear.</p>
-   <p>•	Tip: use your land upi</p>
-</div>
-</div>
-<h1 class="real">SIMPLIFYING REAL ESTATE</h1>
-<p style="margin:30px;">Real estate smart apps to understand and analyze the value of lands and properties    All the data on one place. On one click Analyzing a real estate project became simpler, imali.biz
-    technology allows you deep dive into you due diligence data checking process and take your decisions easier and faster with more data and assurance From our vast experience in 
-    real estate and technology we created  imali.biz- a smart apps for understanding the true value of lands and assets. Real estate developers, lawyers, architects, realtors, appraisers
-     and analysts- we are here to save you time and efforts. All the information you need, is now a click of a button away.</p>
-     <h1 class="real">Land Feasibility</h1>
-     <div style="margin:30px;">
-     <p > <span style="font-weight:bold;"> What was Imali.biz scoring based on?</span>In Imali.biz we developed a scoring system. By means of a series of variables, a higher or lower score was offered depending on the risk:</p>
-      <p style="font-weight:bold;">• 50% of the risk rating comes from the analysis from the real estate point of view of the opportunity;</p>
-      <p >-Location, Developer’s experience,Selling price,Construction,Appraisal price, Big Data Price, Zoning
-        </p>
-        <p style="font-weight:bold;">• The other 50% comes from financial analysis;</p>
-        <p>-Financial ratios,Working capital, Creditworthiness models,Warranties</p>
-        <p class="realy">And after this analysis the projects were classified in this way: </p>    
-        </div>
-        <div class="invest">
-            <p class="realy" style="color:#0FA958;">FEASIBILITY</p>    
-            <div style="display:flex;  justify-content: space-between; color:#0FA958; margin: 8%;">
-            <p>SCORING</p>
-            <p>QAULITY</p>
-            </div>
-            <div class="container" style="margin: 30px;">
-    <div class="row">
-        <div class="col card">AAA</div>
-        <div class="col">2</div>
-    </div>
-    <div class="row">
-        <div class="col card">AA</div>
-        <div class="col">5</div>
+  <h1 class="real">Developer</h1>
+  <p style="text-align:center;">Tokenise (part of) your project and reach a completely new market.</p>
+  <p style="text-align:center;">The power of tokenisation is that it makes real estate accessible again for the general public.
+    Immotokens has the expertise, experience and a database of investors. Together, we can realise great projects.</p>
+    <div style="text-align:center;">
+        <p style="margin-right:3%;">•	Achieve a full new market</p>
+        <p style="margin-left:3%;">•	Make back expensive projects affordable</p>
+        <p>•	Low cost, low risk: easy start-up.</p>
+      </div></div>
+      <h1 style="text-align:center;font-family:bold;">What do you have? Get the chance to sell to everyone</h1>
 
-    </div>
-</div>
-        </div>
-{% if land.profile %}
-          <td><img src="{{land.profile.url}}"></td>
-          {% endif %}
-       <!-- footer code  -->
-  <div class="footerspacer"></div>
+<!-- //table -->
+<table class="table">
+      <tr>
+        <th>Project</th>
+        <th>Steel</th>
+        <th>Doors</th>
+        <th>Bricks</th>
+        <th>Sand</th>
+        <th>Aggregates</th>
+        <th>Stone</th>
+        <th>Window</th>
+        <th>Cement</th>
+        <th>Glass</th>
+        <th>Metal</th>
+        <th>Woods</th>
+      </tr>
+      {%for developer in developers%}
+      <tbody>
+        <tr>
+          <td>{{developer.project}}</td>
+          <td>{{developer.steel}}</td>
+          <td>{{developer.doors}}</td>
+          <td>{{developer.bricks}}</td>
+          <td>{{developer.sand}}</td>
+          <td>{{developer.aggregates}}</td>
+          <td>{{developer.stone}}</td>
+          <td>{{developer.window}}</td>
+          <td>{{developer.cement}}</td>
+          <td>{{developer.glass}}</td>
+          <td>{{developer.metal}}</td>
+          <td>{{developer.woods}}</td>
+        </tr>
+      </tbody>
+      {%endfor%}
+    </table>
+
+        <div class="footerspacer"></div>
   <div class="container-fluid">
       <div class="row">
         <footer class="footer" style="color: white;">

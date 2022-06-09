@@ -22,6 +22,8 @@ urlpatterns = [
     path("land/",include("land.urls")),
     path("buyer/",include("buyer.urls")),
     path("inverstor/",include("inverstor.urls")),
+    path("developer/",include("developer.urls")),
+
 
 
 
