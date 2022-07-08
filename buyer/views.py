@@ -29,7 +29,7 @@ def buyer_profile(request,id):
 def edit_buyer(request, id):
     buyer= Buyer.objects.get(id=id)
     if request.method == "POST":
-        form=BuyerForm(request.POST, instance=Buyer)
+        form=BuyerForm(request.POST, instance=buyer)
         if form.is_valid():
             form.save()
         return redirect("buyer_profile", id=buyer.id)

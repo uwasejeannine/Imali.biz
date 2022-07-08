@@ -1,0 +1,342 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{% block title %}Imali.biz{% endblock %}</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <style>
+      body {
+        font-family: 'Hina Mincho', serif;
+      }
+      .nav-item {
+        color: white;
+        text-decoration: none;
+        padding-left: 20px;
+        padding-right: 30px;
+        font-size: 1.2rem;
+      }
+      .nav-item:hover {
+        color: #a8c634;
+      }
+      .flex-container {
+  display: flex;
+  flex-direction: row;
+  font-size: 20px;
+  text-align: center;
+}
+.flex-container a {
+  color: white;
+  text-decoration: none;
+}
+
+
+.flex-item-left {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+
+.flex-item-right {
+  background-color: rgba(0, 0, 0, 0.6);;
+  padding: 10px;
+  flex: 50%;
+}
+.real{
+font-family: 'Roboto';
+text-align: center;
+font-size: 30px;
+font-weight: bold;
+
+}
+h3{
+  text-align: center;
+  font-weight: bold;
+}
+.cards{
+  background-color: #C4C4C4;
+  height: 195vh;
+}
+.sub_title{
+  font-weight: bold;
+  text-align: center;
+
+}
+.dot {
+width: 150px;
+height: 150px;
+border-radius: 50%;
+background: #FFFFFF; 
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.column {
+  float: left;
+  width: 16.33%;
+  padding: 5px;
+}
+.column:hover {
+  transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.invest{
+position: absolute;
+width: 300px;
+height: 400px;
+left: 350px;
+top:140px;
+
+background: rgba(196, 196, 196, 0.1);
+border: 1px solid #000000;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.footer{
+  background-color: #010203;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin-top: 30px;
+}
+.footer a{
+  color: white;
+  text-decoration: none;
+}
+@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: row;
+  }
+}
+    </style>
+  </head>
+  <body>
+    <div style="background-color: black; height: 80px;">
+    <nav class="navbar navbar-expand-sm black navbar-dark">
+      <a class="navbar-brand" href="{%url 'home'%}">
+        <img
+          src="{% static 'Images/imalilogo.png' %}"
+          alt="logo"
+          style="width: 90%; margin-left: 30px;"
+        />
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarText"
+        aria-controls="navbarText"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText" style="background-color: black;">
+        <ul class="navbar-nav mr-auto"></ul>
+        <div>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'land'%}"
+          >
+          Land
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'investor'%}"
+          >
+            Investors
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'developer'%}"
+          >
+          Developers          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'buyer'%}"
+          >
+          Buyers
+          </a>
+          <a
+            style="text-decoration: none;"
+            class="nav-item"
+            href="{%url 'home'%}"
+          >
+          Data
+          </a>
+        </div>
+      </div>
+    </nav>
+  <!-- data section  -->
+ <div style="margin-top:2%;">
+    <h1 class="real"> DATA SOLUTIONS </h1>
+    <p style="margin:1%;">We’ve brought the world of real estate data into one source to transform the way you operate. We empower your team to identify opportunities, research property details, and contact owners. 
+    </p>
+    <h5 style="color:#0FA958;text-align: center;">Elevate your strategic business decisions with better data.
+    </h5>
+    <img
+    src="{% static 'Images/dataimage.png' %}"
+    alt="logo"
+    style="width: 90%; margin-left: 30px;"
+  />
+  </div> 
+<div>
+  <h1 class="real"> Let Data Work for You </h1>
+  <p style="text-align: center;">All the data on one place. On one click </p>
+  
+  <div class="dot" style="text-align:center;margin-left: 120px;">
+    
+    <img
+    src="{% static 'Images/vector.png' %}"
+    alt="logo"
+    style="width: 30%; margin-left: 10px;"
+  />
+    <p>Tatal Land Size </p>
+    <p style="color:#0FA958 ;">26000sqm² </p>
+
+  </div>
+  <div class="dot" style="text-align:center; margin-left: 400px; margin-top:-135px;">
+    <img
+    src="{% static 'Images/Vector(1).png' %}"
+    alt="logo"
+    style="width: 30%; margin-left: 10px;"
+  />
+    <p>Tatal Land Size </p>
+    <p style="color:#0FA958 ;">26000sqm² </p>
+
+  </div>
+  <div class="dot" style="text-align:center; margin-left: 650px; margin-top:-150px;">
+    <img
+    src="{% static 'Images/Group.png' %}"
+    alt="logo"
+    style="width: 30%; margin-left: 10px;"
+  />
+    <p>Tatal Land Size </p>
+    <p style="color:#0FA958 ;">26000sqm² </p>
+
+  </div>
+   <div class="dot" style="text-align:center; margin-left: 900px; margin-top:-150px">
+    <img
+    src="{% static 'Images/Group (1).png' %}"
+    alt="logo"
+    style="width: 30%; margin-left: 10px;"
+  />
+    <p>Tatal Land Size </p>
+    <p style="color:#0FA958 ;">26000sqm² </p>
+
+  </div> 
+</div>
+<div class="footerspacer"></div>
+  <div class="container-fluid">
+      <div class="row">
+        <footer class="footer" style="color: white;">
+      
+          <!-- Right -->
+          <div>
+            
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Imali.biz ltd
+                </h6>
+                <p>
+                  Smart apps to Match stakeholders in real estate to the buyer and sort out the inefficiencies of value chain in housing supply.                </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Services: 
+                </h6>
+                <p>
+                  <a href="{%url 'land'%}" class="text">Land</a>
+                </p>
+                <p>
+                  <a href="{%url 'investor'%}" class="text">Investor</a>
+                </p>
+                <p>
+                  <a href="{%url 'investor'%}" class="text">Developer</a>
+                </p>
+                <p>
+                  <a href="{%url 'buyer'%}" class="text">Buyer</a>
+                </p>
+              </div>
+              
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fas fa-home me-3"></i> Kicukiro Kigali Rwanda</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@imali.biz
+                </p>
+                <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
+              </div>
+            </div>
+       <br><br><br>
+      
+      <p>
+        <img
+        src="{% static 'Images/imalilogo.png' %}"
+        alt="logo"
+        style="width: 8%; margin-right: 100px;"
+      />
+        &copy; © Copyright 2010 - 2021, IMALI.biz Ltd</p>
+      </footer>
+    </div>
+
+  </div>
+  <!-- End of .container -->
+  <!-- End of .container -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
+<!-- first page -->
+
+  </body>
+</html>

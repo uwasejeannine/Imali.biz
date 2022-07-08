@@ -26,14 +26,14 @@ def investor_profile(request,id):
     return render(request,"investor_profile.html",{"investor":investor})
 
 def edit_investor(request, id):
-    investor= Investor.objects.get(id=id)
+    inverstor= Investor.objects.get(id=id)
     if request.method == "POST":
-        form=InvestorForm(request.POST, instance=Investor)
+        form=InvestorForm(request.POST, instance=inverstor)
         if form.is_valid():
             form.save()
-        return redirect("investor_profile", id=investor.id)
+        return redirect("investor_profile", id=inverstor.id)
     else:
-        form= InvestorForm(instance=investor)
+        form=InvestorForm(instance=inverstor)
         return render(request,"edit_investor.html", {"form":form})
         
 def inverstor(request):

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Hero-list</title>
+    <title>buyer-list</title>
     <style>
       h1 {
-        color: #000000;
+        color: #0fa958;
         text-align: center;
       }
       .table {
@@ -13,12 +13,12 @@
         font-size: 0.9em;
         font-family: sans-serif;
         width: 400px;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
-        /* margin-left: 9%; */
+        box-shadow: 0 0 20px #0fa958;
+        margin-left: 7%;
         margin-top: 2%;
       }
       th {
-        background-color: #050505;
+        background-color: #0fa958;
         color: white;
         text-align: center;
         padding: 13px 20px;
@@ -31,7 +31,7 @@
         border-bottom: 1px solid #dddddd;
       }
       tbody:last-of-type {
-        border-bottom: 2px solid #020202;
+        border-bottom: 2px solid #0fa958;
       }
       a {
         text-decoration: none;
@@ -52,7 +52,6 @@
         <th>Your ID</th>
         <th>Down Payment</th>
         <th>Signature</th>
-        <th>Profile</th>
         <th>Edit</th>
       </tr>
       {%for buyer in buyers%}
@@ -64,12 +63,10 @@
           <td>{{buyer.agent_contract}}</td>
           <td>{{buyer.your_id}}</td>
           <td>{{buyer.down_payment}}</td>
-          <td>{{buyer.signature}}</td>
-          <td>
-            <a href="{% url 'buyer_profile' id=buyer.id %}">Profile</a>
-          </td>
+          {% if buyer.signature %}
+          <td><img src="{{buyer.signature.url}}" /></td>
+          {% endif %}
           <td><a href="{% url 'edit_buyer' id=buyer.id %}">Edit</a></td>
-        </tr>
         </tr>
       </tbody>
       {%endfor%}

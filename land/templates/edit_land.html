@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Edit Heroes Information</title>
+    <title>Edit land Information</title>
     <style>
         body{
-    background-color:#2198c3;
+    background-color:#0FA958;
     width: 400px;
     height: 800px;
     font-size: 20px;
 }
 .head{
-    color: #2198c3;
+    color: #0FA958;
     font-size: 25px;
     text-align: center;
     margin-bottom: 40px;
@@ -42,24 +42,19 @@ img{
     width: 20%;
     height: 30%;
     margin-left: 45%;
-    border: 5px solid #2198c3;
+    border: 5px solid #0FA958;
     border-radius: 20px;
 
 }
 h1{
-    color: #2198c3;
+    color: #0FA958;
     text-align: center;
     }
     </style>
 </head>
 <body>
     <div class="container">
-        <img
-        style="width: 30%; margin-left: 30%;"
-        src="https://www.f6s.com/content-resource/profiles/2942445_original.jpg"
-        alt=""
-      />
-    <h1>Edit Hero Information</h1>
+    <h1>Edit Land Information</h1>
     <form method="POST" enctype="multipart/form-data">
         {%csrf_token%}
     {{form.as_p}}

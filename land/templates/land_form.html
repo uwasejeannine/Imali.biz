@@ -61,7 +61,7 @@ font-weight: bold;
       }
 
       .container {
-        /* margin-left: 200px; */
+        margin-left:15px;
         width: 600px;
         font-size: 15px;
         border-radius: 10px;
@@ -78,28 +78,12 @@ font-weight: bold;
         border-radius: 5px;
         background-color: white;
       }
-      .recovery{
-    display: flex;
-    width:  140%;
-  }
-  .keep-logged> p{
-    margin-left: -30%;
-    width: 100%;
-    margin-top: 1%;
-  }
-  .keep-logged > input{
-    margin-left: -39%;
-    margin-top: 2%;
-  }
-  .keep-logged{
-    display: flex;
-    width: 50%;
-   }
+ 
   .button {
         width: 40%;
         height: 60%;
-        margin-right: 60%;
-        margin-top: 15%;
+        margin-left: 25%;
+        margin-top: -9%;
         color: white;
         background: #0FA958;
        border: 1px solid #0FA958;
@@ -114,7 +98,7 @@ font-weight: bold;
         color: #0FA958;
        border: 1px solid #0FA958;
         border-radius: 10px;
-        margin-left: 590px;
+        margin-left: 500px;
         margin-top:-40px
   }
   .real{
@@ -199,21 +183,21 @@ td {
             <a
               style="text-decoration: none;"
               class="nav-item"
-              href="{%url 'home'%}"
+              href="{%url 'land'%}"
             >
             Land
             </a>
             <a
               style="text-decoration: none;"
               class="nav-item"
-              href="{%url 'home'%}"
+              href="{%url 'investor'%}"
             >
               Investors
             </a>
             <a
               style="text-decoration: none;"
               class="nav-item"
-              href="{%url 'home'%}"
+              href="{%url 'developer'%}"
             >
             Developers          </a>
             <a
@@ -226,7 +210,7 @@ td {
             <a
               style="text-decoration: none;"
               class="nav-item"
-              href="{%url 'home'%}"
+              href="{%url 'data'%}"
             >
             Data
             </a>
@@ -245,26 +229,26 @@ td {
       <form method="POST" enctype="multipart/form-data">
         {%csrf_token%} {{form.as_p}}
         <p style="color:#0FA958;">To check your Land api click *561# provided by RLMUA</p>
-        <div class="recovery">
-          <div class="keep-logged">
-        <input class="primary" type="checkbox"></input>
-        <p>I confirm that I have give correct information for the purpose of selling my land</p>
-    </div>
-    <input type="submit" value="Submit" class="button" />
+      <input type="submit" value="Submit" class="button" />
       </form>
     </div>
-    </div>
-    <div style="text-align: center;margin-top:-1100px; margin-left: 500px;">
-      <p>Beutiful Plot for Sale in Kibagabaga,Kigali</p>
+    <div style="text-align: center;margin-top:-1000px; margin-left: 500px;">
+      <p style="margin-right:60px;">Beutiful Plot for Sale in Kibagabaga,Kigali</p>
       <p class="button1">Price</p>
-      <p style="margin-left: 585px;margin-top:-40px; font-weight: bold;">$7,000,000 </p>
+      <p style="margin-left: 520px;margin-top:-40px; font-weight: bold;">$7,000,000 </p>
       <img src="{% static 'Images/image62.png' %}" style="border-radius: 30px; width:80%;margin-left: 150px;" class="card-img-top" alt="...">
-      <div class="row" style="padding:2px;margin-left: 135px;">
+      <div class="row" style="margin-left: 170px;margin-top: 5%;">
         <div class="column">
           <img src="{% static 'Images/image62.png' %}" alt="Snow" style="width:80%">
         </div>
         <div class="column">
           <img src="{% static 'Images/image63.png' %}" alt="Forest" style="width:80%">
+        </div>
+        <div class="column">
+          <img src="{% static 'Images/image59.png' %}" alt="Mountains" style="width:80%">
+        </div>
+        <div class="column">
+          <img src="{% static 'Images/image68.png' %}" alt="Mountains" style="width:80%">
         </div>
         <div class="column">
           <img src="{% static 'Images/image59.png' %}" alt="Mountains" style="width:80%">
@@ -279,7 +263,7 @@ td {
 
 
   <!-- The land on Master plan -->
-<div class="real">
+<div class="real" style="margin-top:12%;">
   <h1> The land on Master plan </h1>
   <img src="{% static 'Images/image4.png' %}" class="card-img-top" style="width:95%" alt="...">
 </div>
@@ -315,7 +299,7 @@ td {
     
   </table>
 </div>
-<div>
+<div style="margin-left:5%;">
   <h1 style="text-align:center;">Land Description</h1>
   <p>We present Kagugu house , the first phase of this Fixed Rate opportunity which consists of financing the associated costs for the construction of a building with ten high-rise flats and fifteen parking spaces in the same gate.
 

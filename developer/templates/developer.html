@@ -94,35 +94,25 @@ font-weight: bold;
   display: table;
   clear: both;
 }
+.button2{
+  background-color: #0FA958;
+  border-radius: 10px;
+  color: white; width: 20%;
+  height: 40%;
+  border-radius: 10px;
+  margin-left: 40%;
+  border-color:white
+}
 .table {
-        border-collapse: collapse;
-        margin: 25px 0;
-        font-size: 0.9em;
-        font-family: sans-serif;
-        width: 500px;
         box-shadow: 0 0 20px #0FA958;
-        margin-left: 15%;
-        margin-top: 2%;
+     
       }
       th {
         background-color: #0FA958;
         color: white;
         text-align: center;
-        padding: 13px 20px;
       }
-      td {
-        padding: 20px 30px;
-        text-align: center;
-      }
-      tbody {
-        border-bottom: 1px solid #dddddd;
-      }
-      tbody:last-of-type {
-        border-bottom: 2px solid #ffffff;
-      }
-      a {
-        text-decoration: none;
-      }
+ 
 /* Responsive columns */
 @media screen and (max-width: 600px) {
   .column {
@@ -200,7 +190,7 @@ font-weight: bold;
           <a
             style="text-decoration: none;"
             class="nav-item"
-            href="{%url 'home'%}"
+            href="{%url 'data'%}"
           >
           Data
           </a>
@@ -229,22 +219,25 @@ font-weight: bold;
 <table class="table">
       <tr>
         <th>Project</th>
-        <th>Steel</th>
-        <th>Doors</th>
-        <th>Bricks</th>
-        <th>Sand</th>
-        <th>Aggregates</th>
-        <th>Stone</th>
-        <th>Window</th>
-        <th>Cement</th>
-        <th>Glass</th>
-        <th>Metal</th>
-        <th>Woods</th>
+        <th>Steel(Kg)</th>
+        <th>Doors(Piece)</th>
+        <th>Bricks(No)</th>
+        <th>Sand(Sack)</th>
+        <th>Aggregates(Tones)</th>
+        <th>Stone(Tones)</th>
+        <th>Window(Piece)</th>
+        <th>Cement(Sacks)</th>
+        <th>Glass(Piece)</th>
+        <th>Metal(Piece)</th>
+        <th>Woods(Piece)</th>
+        <th>Edit</th>
+
       </tr>
       {%for developer in developers%}
       <tbody>
-        <tr>
-          <td>{{developer.project}}</td>
+        <tr>{% if developer.project %}
+          <td><img src="{{developer.project.url}}"></td>
+          {% endif %}
           <td>{{developer.steel}}</td>
           <td>{{developer.doors}}</td>
           <td>{{developer.bricks}}</td>
@@ -256,10 +249,12 @@ font-weight: bold;
           <td>{{developer.glass}}</td>
           <td>{{developer.metal}}</td>
           <td>{{developer.woods}}</td>
+          <td><a href="{% url 'edit_developer' id=developer.id %}">Edit</a></td>
         </tr>
       </tbody>
       {%endfor%}
     </table>
+    <a  href="{%url 'buyer_form'%}"><input type="submit" value="Buy" class="button2" /></a>
 
         <div class="footerspacer"></div>
   <div class="container-fluid">
@@ -294,7 +289,7 @@ font-weight: bold;
                   <a href="{%url 'investor'%}" class="text">Investor</a>
                 </p>
                 <p>
-                  <a href="{%url 'investor'%}" class="text">Developer</a>
+                  <a href="{%url 'developer'%}" class="text">Developer</a>
                 </p>
                 <p>
                   <a href="{%url 'buyer'%}" class="text">Buyer</a>

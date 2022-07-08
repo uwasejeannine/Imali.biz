@@ -10,7 +10,7 @@ class Buyer(models.Model):
     agent_contract=models.CharField(max_length=240,null=True)
     your_id=models.CharField(max_length=16,null=True,default="your national id number")
     down_payment=models.CharField(max_length=240,null=True,default="$")
-    signature=models.ImageField(null=True)
+    signature=models.ImageField(upload_to ='images/',null=True)
     
   
 
