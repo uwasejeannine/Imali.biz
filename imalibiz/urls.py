@@ -25,6 +25,8 @@ urlpatterns = [
     path("buyer/",include("buyer.urls")),
     path("inverstor/",include("inverstor.urls")),
     path("developer/",include("developer.urls")),
+    path("datalist/",include("datalist.urls")),
+
 ]
 if settings.DEBUG:
         urlpatterns += static(settings.MEDIA_URL,

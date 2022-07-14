@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'developer',
     'phonenumber_field',
     'location_field.apps.DefaultConfig',
-    'core'
+    'core',
+    'datalist'
 
 
 ]

@@ -1,12 +1,11 @@
 from email.policy import default
 from django.db import models
-from phonenumber_field.modelfields import PhoneNumberField
-from location_field.models.plain import PlainLocationField
+
 
 
 
  
-class Land(models.Model):
+class DataList(models.Model):
     first_name= models.CharField(max_length=240,null=True)
     last_name= models.CharField(max_length=240,null=True)
     email_addres=models.EmailField(max_length=25,null=True,default="your email address")
@@ -43,16 +42,13 @@ class Land(models.Model):
     zooning = models.CharField(
         max_length=8, choices=zooning_choice,null=True
     )
-    cost_sqm=models.PositiveSmallIntegerField(null=True)
-
     upi_number=models.CharField(max_length=20,null=True)
-    image = models.ImageField()
+    down_payment=models.CharField(max_length=240,null=True,default="$")
+    how_much_do_you_want_to_invest=models.PositiveIntegerField(null=True)
+    signature=models.ImageField(upload_to ='images/',null=True)
 
-    @property
-    def cost_sqm(self):
-        cost_sqm=self. price/ self.land_size
-        return cost_sqm 
 
     def full_name(self):
         return f"{self.first_name} {self.last_name}"
+    
 

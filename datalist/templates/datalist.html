@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>lands-list</title>
+    <style>
+      h1 {
+        color: #0FA958;
+        text-align: center;
+      }
+      .table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        width: 400px;
+        box-shadow: 0 0 20px #0FA958;
+        /* margin-left: 9%; */
+        margin-top: 2%;
+      }
+      th {
+        background-color: #0FA958;
+        color: white;
+        text-align: center;
+        padding: 13px 20px;
+      }
+      td {
+        padding: 10px 20px;
+        text-align: center;
+      }
+      tbody {
+        border-bottom: 1px solid #dddddd;
+      }
+      tbody:last-of-type {
+        border-bottom: 2px solid #0FA958;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>datalist</h1>
+    <table class="table">
+      <tr>
+        <th>Full name</th>
+        <th>Email address</th>
+        <th>Phone number</th>
+        <th>Land Size</th>
+        <th>Price</th>
+        <th>City</th>
+        <th>Location</th>
+        <th>Zooning</th>
+        <th>Cost/Sqm</th>
+        <th>UPI Number</th>
+        <th>Profile</th>
+        <th>Edit</th>
+      </tr>
+      {%for datalist in datalists%}
+      <tbody>
+        <tr>
+          <td>{{datalist.full_name}}</td>
+          <td>{{datalist.email_addres}}</td>
+          <td>{{datalist.phone}}</td>
+          <td>{{datalist.land_size}}</td>
+          <td>{{datalist.price}}</td>
+          <td>{{datalist.city}}</td>
+          <td>{{datalist.location}}</td>
+          <td>{{datalist.zooning}}</td>
+          <td>{{datalist.cost_sqm}}</td>
+          <td>{{datalist.upi_number}}</td>
+        </tr>
+        </tr>
+      </tbody>
+      {%endfor%}
+    </table>
+  </body>
+</html>
