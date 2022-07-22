@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class DatalistConfig(AppConfig):
+class RunserverConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'datalist'
+    name = 'runserver'

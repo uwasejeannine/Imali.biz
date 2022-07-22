@@ -25,7 +25,8 @@ urlpatterns = [
     path("buyer/",include("buyer.urls")),
     path("inverstor/",include("inverstor.urls")),
     path("developer/",include("developer.urls")),
-    path("datalist/",include("datalist.urls")),
+    path("machmaking/",include("machmaking.urls")),
+
 
 ]
 if settings.DEBUG:

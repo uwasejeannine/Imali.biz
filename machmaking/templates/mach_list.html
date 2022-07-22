@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Machmaking List</title>
+    <style>
+      h1 {
+        color: #0FA958;
+        text-align: center;
+      }
+      .table {
+        border-collapse: collapse;
+        margin: 25px 0;
+        font-size: 0.9em;
+        font-family: sans-serif;
+        /* width: 400px; */
+        box-shadow: 0 0 20px #0FA958;
+        /* margin-left: 9%; */
+        margin-top: 2%;
+      }
+      th {
+        background-color: #0FA958;
+        color: white;
+        text-align: center;
+        padding: 13px 20px;
+      }
+      td {
+        padding: 10px 20px;
+        text-align: center;
+      }
+      tbody {
+        border-bottom: 1px solid #dddddd;
+      }
+      tbody:last-of-type {
+        border-bottom: 2px solid #0FA958;
+      }
+      a {
+        text-decoration: none;
+      }
+      img {
+        width: 150%;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Machmaking List</h1>
+    <table class="table">
+        <tr>
+            <th>Full Name</th>
+            <th>Sector</th>
+            <th>Cell</th>
+            <th>Price</th>
+            <th>Land Size</th>
+            <th>Cost sqm</th>
+            <th>Upi</th>
+            <th>Zooning</th>
+            <th>Engineer</th>
+            <th>Contraction</th>
+            <th>Unit & Type</th>
+            <th>Sale Price Frw</th>
+            <th>Total cost Rwf</th>
+            <th>Benefit(Rwf)</th>
+            <th>Status</th>
+            <th>RIO</th>
+          </tr>
+      {%for mach in machs%}
+      <tbody>
+        <tr>
+            <td>{{mach.full_name}}</td>
+            <td>{{mach.sector}}</td>
+            <td>{{mach.cell}}</td>
+            <td>{{mach.price}}</td>
+            <td>{{mach.land_size}}</td>
+            <td>{{mach.upi}}</td>
+            <td>{{mach.zonning}}</td>
+            <td>{{mach.engineer}}</td>
+            <td>{{mach.contraction}}</td>
+            <td>{{mach.unit_type}}</td>
+            <td>{{mach.sale_price_frw}}</td>
+            <td>{{mach.total_cost_rwf}}</td>
+            <td>{{mach.benefit}}</td>
+            <td>{{mach.status}}</td>
+            <td>{{mach.rio}}</td>
+          </tr>
+        </tr>
+      </tbody>
+      {%endfor%}
+    </table>
+  </body>
+</html>

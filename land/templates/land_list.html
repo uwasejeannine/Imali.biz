@@ -12,7 +12,7 @@
         margin: 25px 0;
         font-size: 0.9em;
         font-family: sans-serif;
-        width: 400px;
+        /* width: 400px; */
         box-shadow: 0 0 20px #0FA958;
         /* margin-left: 9%; */
         margin-top: 2%;
@@ -55,8 +55,6 @@
         <th>Zooning</th>
         <th>Cost/Sqm</th>
         <th>UPI Number</th>
-        <th>Profile</th>
-        <th>Edit</th>
       </tr>
       {%for land in lands%}
       <tbody>
@@ -71,10 +69,6 @@
           <td>{{land.zooning}}</td>
           <td>{{land.cost_sqm}}</td>
           <td>{{land.upi_number}}</td>
-          <td>
-            <a href="{% url 'land_profile' id=land.id %}">Profile</a>
-          </td>
-          <td><a href="{% url 'edit_land' id=land.id %}">Edit</a></td>
         </tr>
         </tr>
       </tbody>

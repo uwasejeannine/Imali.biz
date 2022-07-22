@@ -45,7 +45,7 @@ INSTALLED_APPS = [
     'phonenumber_field',
     'location_field.apps.DefaultConfig',
     'core',
-    'datalist'
+    'machmaking'
 
 
 ]
