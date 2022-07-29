@@ -12,9 +12,9 @@ class Mach(models.Model):
     sector= models.CharField(max_length=240,null=True)
     cell= models.CharField(max_length=240,null=True)
     price=models.CharField(max_length=25,null=True)
-    land_size=models.PositiveSmallIntegerField(null=True,default="hectare")
-    cost_sqm=models.PositiveBigIntegerField(null=True)
-    upi= models.CharField(max_length=50)
+    land_size=models.CharField(max_length=25,null=True)
+    # cost_sqm=models.PositiveSmallIntegerField(null=True)
+    upi= models.CharField(max_length=50,null=True)
     zooning_choice=(
         ('R1','R1'),
         ('R1A','R1A'),
@@ -39,22 +39,21 @@ class Mach(models.Model):
         ('P3','P3'),
         ('P4','P4'),    
     )
-    zonning = models.CharField(
-        max_length=8, choices=zooning_choice,null=True
-    )
+    zonning = models.CharField(max_length=8, choices=zooning_choice,null=True)
     engineer=models.CharField(max_length=20,null=True)
     contraction=models.CharField(max_length=240,null=True)
     unit_type=models.CharField(max_length=240,null=True)
-    sale_price_frw=models.CharField(max_length=20,null=True)
+    sale_price_rwf=models.CharField(max_length=20,null=True)
     total_cost_rwf=models.CharField(max_length=240,null=True)
     benefit=models.CharField(max_length=240,null=True)
     status=models.CharField(max_length=240,null=True)
     rio=models.CharField(max_length=240,null=True)
+    cost_sqm=models.BigIntegerField(null=True)
     
 
     @property
     def cost_sqm(self):
-        cost_sqm=self. price/ self.land_size
+        cost_sqm=self.price/self.land_size
         return cost_sqm 
 
     def full_name(self):

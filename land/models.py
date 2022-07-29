@@ -41,8 +41,7 @@ class Land(models.Model):
         
     )
     zooning = models.CharField(
-        max_length=8, choices=zooning_choice,null=True
-    )
+        max_length=8, choices=zooning_choice,null=True)
     cost_sqm=models.PositiveSmallIntegerField(null=True)
 
     upi_number=models.CharField(max_length=20,null=True)
