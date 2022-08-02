@@ -65,16 +65,15 @@
         padding-top: 40px;
       }
       .invest{
-position: absolute;
-width: 300px;
-height: 370px;
-left: 150%;
-top:18%;
-
-background: rgba(196, 196, 196, 0.1);
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+    position: absolute;
+    width: 300px;
+    height: 370px;
+    left: 150%;
+    top:18%;
+    background: rgba(196, 196, 196, 0.1);
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+ }
 .invest2{
 position: absolute;
 width: 300px;
@@ -86,16 +85,16 @@ border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-      .container1 {
+.container1 {
         margin-left: 200px;
         width: 500px;
         margin-left: 50%;
         font-size: 15px;
         border-radius: 5px;
-       background-color: #ffffff4f;
+        background-color: #ffffff4f;
         padding: 20px;
         margin-top: 8%;
-      }
+}
   
       input {
         width: 100%;
@@ -289,7 +288,7 @@ border-radius: 5px;
         <div class="col-sm-6">
             <div class="card-body">
               <p class="card-title" style="text-align:center">Kagugu building</p>
-              <img src="{% static 'Images/image3.png' %}" style="height:420px; width: 150%;" class="card-img-top" alt="...">
+              <img src="{% static 'Images/image3.png' %}" style="height:350px; width: 110%;" class="card-img-top" alt="...">
 
               <div style="margin-top:2%;">
               <button type="button" class="btn btn-primary btn-icon-text">
@@ -459,18 +458,14 @@ border-radius: 5px;
         It presents an excellent level of services and communications, being close to restaurants, supermarkets, schools, parks, health centres, etc...
         </p>
     </div>
-    <div id="googleMap" style="width:90%;height:300px; margin-left: 6%;"></div>
-    <script>
-      function myMap() {
-      var mapProp= {
-        center:new google.maps.LatLng(1.9403,29.8739),
-        zoom:5,
-      };
-      var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-      }
-      </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfzRap7MOWwbLpvIb32i-7X2P9nHMZOc0&callback=myMap"></script>
     <div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="contact-map">
+            <iframe src="https://www.google.com/maps/embed/v1/place?q=New+Kigali,+Rwanda&amp;key=AIzaSyBSFRN6WWGYwmFi498qXXsD2UwkbmD74v4" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" style="width: 200%; height: 360px;"></iframe>
+          </div>
+        </div>
+    </div>
       <h6 style="color:white;background-color: #000000;height: 30px; text-align:center; font-size: 20px;">RISKS</h6>
       <p>Before investing in this project, the investor must know the risks of his investment: Housers recommends carefully reading the Basic Information for the Investor.
 
@@ -548,7 +543,7 @@ border-radius: 5px;
                   <i class="fas fa-envelope me-3"></i>
                   info@imali.biz
                 </p>
-                <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
+                <p><i class="fas fa-phone me-3"></i> + 4447934762181</p>
               </div>
             </div>
        <br><br><br>
