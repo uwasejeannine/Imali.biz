@@ -90,14 +90,7 @@ h3{
   padding: 1%;
   margin-top: 2%;
 }
-.dot {
-width: 140px;
-height: 140px;
-border-radius: 50%;
-background: #FFFFFF; 
-border: 1px solid #000000;
-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
+
 .column {
   float: left;
   width: 16.33%;
@@ -139,6 +132,15 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   width: 100%;
   height: auto;
   margin-top: 2%;
+}
+.dot2 {
+  width: 170px;
+  height: 170px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  display: inline-block;
+  border-color: #0FA958;
 }
 .button {
   width: 40%;
@@ -371,9 +373,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
                 <button type="button" class="btn .bg-light border border-success btn-icon-text "style="margin-top:2%;margin-left:3%;">
                   <i class="fa fa-youtube-play "></i>
                   Video
-                  </button>       
+                  </button>   
+                  <a href="{%url 'developer'%}" class="btn bg-dark" style="color:white;margin-left:30%;margin-top:2%;width: 20%;">Tender</a>
+    
             </div>
-            <a href="{%url 'developer'%}" class="btn bg-dark" style="color:white;margin-left:30%;margin-top:2%;width: 20%;">Tender</a>
       </div>
   
         </div>
@@ -422,13 +425,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       </div>
   </div>
   <!-- data section  -->
- <div>
-  <div>
-    <h1 class="real"> Let Data Work for You </h1>
+  <div style="text-align:center">
+    <h1>Let Data Work for You</h1>
     <p style="text-align: center;">All the data on one place. On one click </p>
-    
-    <div class="dot" style="text-align:center;margin-left: 150px;">
-    
+
+    <span class="dot2">
       <img
       src="{% static 'Images/vector.png' %}"
       alt="logo"
@@ -436,9 +437,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     />
       <p>Tatal Land Size  </p>
       <p style="color:#0FA958 ;">26000sqm² </p>
-  
-    </div>
-    <div class="dot" style="text-align:center; margin-left: 400px; margin-top:-135px;">
+    </span>
+    <span class="dot2">
       <img
       src="{% static 'Images/Vector(1).png' %}"
       alt="logo"
@@ -446,9 +446,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     />
       <p>Total amount invested </p>
       <p style="color:#0FA958 ;">$30,000,000 </p>
-  
-    </div>
-    <div class="dot" style="text-align:center; margin-left: 650px; margin-top:-140px;">
+    </span>
+    <span class="dot2">
       <img
       src="{% static 'Images/Group.png' %}"
       alt="logo"
@@ -456,9 +455,8 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     />
       <p> Total  Developers </p>
       <p style="color:#0FA958 ;">78 dev </p>
-  
-    </div>
-     <div class="dot" style="text-align:center; margin-left: 900px; margin-top:-140px">
+    </span>
+    <span class="dot2">
       <img
       src="{% static 'Images/Group (1).png' %}"
       alt="logo"
@@ -466,7 +464,11 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     />
       <p>Total Land sold </p>
       <p style="color:#0FA958 ;">121 Land </p>
-  
+    </span>
+  </div>
+ <div>
+  <div>
+    
     </div> 
   </div>
 <div class="footerspacer"></div>
