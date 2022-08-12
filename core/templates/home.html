@@ -109,12 +109,13 @@ h3{
 .invest{
 position: absolute;
 width: 250px;
-height: 415px;
+height: 313px;
 left: 330px;
 top:120px;
 background: rgba(245, 243, 243, 0.1);
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-top: -1.5%;
 }
 .invest2{
 position: absolute;
@@ -125,6 +126,7 @@ top:140px;
 background: rgba(245, 243, 243, 0.1);
 border: 1px solid #000000;
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+margin-top:-5%;
 }
 .footer{
   background-color: #010301;
@@ -144,7 +146,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .button {
   width: 40%;
-  height: 7%;
+  height: 10%;
   text-align: center;
   border-radius: 10px;
   color: white;
@@ -223,16 +225,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         </div>
       </div>
     </nav>
-    <!-- body code -->
-    <div class="flex-container">
-      <a class="flex-item-left" href="{%url 'landexplanation'%}">Feasability</a>
-      <a class="flex-item-right" href="{%url 'landexplanation'%}">Desirability</a>
-      <a class="flex-item-right"href="{%url 'landexplanation'%}">Viability</a>
-    </div>
-   
     <div>
       <h1 class="real">ALL IN ONE REAL ESTATE SERVICE</h1>
-      <p style="margin:1%;">Imali.biz is a fractional investment platform with the mission to make property accessible for all Rwandan by Matching stakeholders in real estate to the buyer and sort out the inefficiencies of value chain in housing supply.
+      <p style=" margin-left: 4%;margin-right: 4%;">Imali.biz is a fractional investment platform with the mission to make property accessible for all Rwandan by Matching stakeholders in real estate to the buyer and sort out the inefficiencies of value chain in housing supply.
       </p>
     </div>
     <div class="cards">
@@ -240,9 +235,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-            <h3>LAND OWNER</h3>
-            <h5 class="sub_title">Put down your land, we‘re here to connect you with investors</h5>
-            <p class="card-title" style="text-align:center">Kagugu Plot for Sale</p>
+            <h5 style="text-align:center;font-weight: bold;">LAND OWNER</h5>
+            <p class="sub_title" style="margin-top:-2%;">Put down your land, we‘re here to connect you with investors</p>
+            <p class="card-title" style="text-align:center;margin-top:-2%;">Kagugu Plot for Sale</p>
             <img src="{% static 'Images/image4.png' %}" class="card-img-top" alt="...">
             <div class="row">
               <div class="column">
@@ -286,22 +281,44 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       <div class="col-sm-6">
         <div class="card">
           <div class="card-body">
-            <h3>INVESTOR</h3>
-            <h5 class="sub_title">You can invest in a property from <span style="color:#0FA958;">$100</span>, check out  more  </h5>
-            <p class="card-title" style="text-align:center">Kagugu building</p>
-            <img src="{% static 'Images/image3.png' %}" style="height:420px; width: 300px;margin-top:-2%;" class="card-img-top" alt="...">
+            <h5 style="text-align:center;font-weight: bold;">INVESTOR</h5>
+            <p class="sub_title" style="margin-top:-2%;">You can invest in a property from <span style="color:#0FA958;">$100</span>, check out  more  </p>
+            <p class="card-title" style="text-align:center;margin-top:-2%;">Kagugu building</p>
+            <img src="{% static 'Images/image3.png' %}" style="height:315px; width: 300px;margin-top:1%;" class="card-img-top" alt="...">
             <div class="invest">
               <p style=" text-align: center;margin-right:22%;">Kagugu building<span style="font-weight: bold;margin-left:17%">Rwf</span></p>
-                <p style="text-align: center;margin-right:22%;">PHASE: <span style="font-weight: bold;margin-left:20%">FUNDING</span> </p>
-                <p style="text-align: center;">92,145,000 RWF <span style="color:#0FA958;font-weight: bold;margin-left:17%"> $9500,000</span></p>
-                <img src="{% static 'Images/Group 34.png' %}" style="margin-left:15%;width: 70%;margin-top:-14%;" class="card-img-top" alt="...">
-                <p style="text-align: center;margin-right:5%;">203  Investors<span style="margin-left:20%">11 days left</span> </p>
-                <p style="text-align: center;margin-right:25%;">Term :   <span style="color:#0FA958;font-weight: bold;margin-left:17%"> 24 Months</span></p>
-                <p style="text-align: center;margin-right: 7%;">Type: <span style="margin-left:20%"> Development loan</span> </p>
-                <p style="text-align: center;margin-right:25%;">Annual yield: <span style="font-weight: bold;margin-left:17%"> 15%</span></p>
-                <p style="text-align: center;margin-right:27%;">Total yield:<span style="margin-left:20%"> 45%</span> </p>
-                <p style="text-align: center;">Minimum investment:<span style="color:#0FA958;font-weight: bold;margin-left:17%"> $100</span></p>
-                <a  href=""><input type="submit" value="Invest" class="button" /></a>
+                <p style="text-align: center;margin-right:3%;margin-top:-6%;">PHASE: <span style="font-weight: bold;margin-left:35%">FUNDING</span> </p>
+                <p style="text-align: center;margin-right:5%;margin-top:-6%;">92,145,000 RWF <span style="color:#0FA958;font-weight: bold;margin-left:10%"> $9500,000</span></p>
+                <img src="{% static 'Images/Group 34.png' %}" style="margin-left:15%;width: 70%;margin-top:-20%;" class="card-img-top" alt="...">
+                <p style="text-align: center;margin-right:5%;margin-top:-13%">203  Investors<span style="margin-left:15%">11 days left</span> </p>
+                <p style="text-align: center;margin-right:8%;margin-top:-8%">Term :   <span style="color:#0FA958;font-weight: bold;margin-left:37%"> 24 Months</span></p>
+                <p style="text-align: center;margin-right:-3%;margin-top:-7%">Type: <span style="margin-left:30%"> Development loan</span> </p>
+                <p style="text-align: center;margin-right:17%;margin-top:-7%">Annual yield: <span style="font-weight: bold;margin-left:30%"> 15%</span></p>
+                <p style="text-align: center;margin-right:15%;margin-top:-7%">Total yield:<span style="margin-left:37%"> 45%</span> </p>
+                <p style="text-align: center;margin-top:-7%;margin-right:12%">Minimum investment:<span style="color:#0FA958;font-weight: bold;margin-left:5%"> $100</span></p>
+                <p style="text-align: center;margin-right:13%;margin-top:-7%">Type of Money: <span style="margin-left:20%"> Loan</span> </p>
+                <p style="text-align: center;margin-right:17%;margin-top:-7%">Annual yield: <span style="font-weight: bold;margin-left:30%"> 15%</span></p>
+                <a  href="{%url 'investor_form'%}"><input type="submit" value="Invest" class="button" /></a>
+            </div>
+            <div class="row">
+              <div class="column">
+                <img src="{% static 'Images/image62.png' %}" alt="Snow" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="{% static 'Images/image63.png' %}" alt="Forest" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="{% static 'Images/image59.png' %}" alt="Mountains" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="{% static 'Images/image68.png' %}" alt="Mountains" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="{% static 'Images/image61.png' %}" alt="Mountains" style="width:100%">
+              </div>
+              <div class="column">
+                <img src="{% static 'Images/greenhouse1.png' %}" alt="Mountains" style="width:100%">
+              </div>
             </div>
             <div class="row" style="margin-left:2%;">
               <p class="fex" style="background-color:#0FA958;">AAA</p>
@@ -317,6 +334,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
             <div class="column">
               <img src="{% static 'Images/image 67.png' %}" alt="Mountains" style="width:40%">
             </div>
+            
           </div>
           <a href="{%url 'investor'%}" class="btn bg-dark" style="color:white; text-align: center;margin-top:-6%;margin-left: 35%;"> Ckeck more House</a>
         </div>
@@ -328,9 +346,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         <div class="col-sm-6" style="margin-top:0.1%;">
           <div class="card">
             <div class="card-body">
-              <h3>DEVELOPER</h3>
-              <h5 class="sub_title">Welcome to work with us to unlock opportunities</h5>
-              <p class="card-title" style="text-align:center">Kibagabaga Artcheture</p>
+              <h5 style="text-align:center;font-weight: bold;">DEVELOPER</h5>
+              <p class="sub_title"style="margin-top:-2%;">Welcome to work with us to unlock opportunities</p>
+              <p class="card-title" style="text-align:center;margin-top:-2%;">Kibagabaga Artcheture</p>
               <img src="{% static 'Images/image21.png' %}"   style="height:335px;width: 300px;"class="card-img-top" alt="...">
               <div class="invest2">
                 <p style="text-align:center;">Contraction material </p>
@@ -383,9 +401,9 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         <div class="col-sm-6" style="margin-top:0.5%;">
           <div class="card">
             <div class="card-body">
-              <h3>HOME BUYERS</h3>
-              <h5 class="sub_title">Did you know, you can own your House from <span style="color:#0FA958;">$5000</span></h5>
-              <p class="card-title" style="text-align:center">Kibagabaga apartment</p>
+              <h5 style="text-align:center;font-weight: bold;">HOME BUYERS</h5>
+              <p class="sub_title"style="margin-top:-2%;">Did you know, you can own your House from <span style="color:#0FA958;">$5000</span></p>
+              <p class="card-title" style="text-align:center;margin-top:-3%;">Kibagabaga apartment</p>
               <img src="{% static 'Images/image11.png' %}" style="height:335px;" class="card-img-top" alt="...">
               <div class="row">
                 <div class="column">
@@ -426,10 +444,10 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   </div>
   <!-- data section  -->
   <div style="text-align:center">
-    <h1>Let Data Work for You</h1>
+    <h3>Let Data Work for You</h3>
     <p style="text-align: center;">All the data on one place. On one click </p>
 
-    <span class="dot2">
+    <span class="dot2" style="margin-right:5%;">
       <img
       src="{% static 'Images/vector.png' %}"
       alt="logo"
@@ -438,7 +456,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       <p>Tatal Land Size  </p>
       <p style="color:#0FA958 ;">26000sqm² </p>
     </span>
-    <span class="dot2">
+    <span class="dot2"style="margin-right:5%;">
       <img
       src="{% static 'Images/Vector(1).png' %}"
       alt="logo"
@@ -456,7 +474,7 @@ box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       <p> Total  Developers </p>
       <p style="color:#0FA958 ;">78 dev </p>
     </span>
-    <span class="dot2">
+    <span class="dot2"style="margin-left:5%;">
       <img
       src="{% static 'Images/Group (1).png' %}"
       alt="logo"

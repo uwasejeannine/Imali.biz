@@ -10,7 +10,6 @@ class Land(models.Model):
     first_name= models.CharField(max_length=240,null=True)
     last_name= models.CharField(max_length=240,null=True)
     email_addres=models.EmailField(max_length=25,null=True,default="your email address")
-    city = models.CharField(max_length=50)
     location=models.CharField(max_length=240,null=True,default="Give /sector/district/country")
     phone =models.CharField (max_length=10,null=False,  default="Phone number")
     land_size=models.PositiveSmallIntegerField(null=True,default="hectare")

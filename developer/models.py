@@ -3,7 +3,7 @@ from django.db import models
 
  
 class Developer(models.Model):
-    project=models.ImageField(upload_to ='images/',null=True,)
+    # project=models.ImageField(upload_to ='images/',null=True,)
     steel= models.CharField(max_length=20,default="Kg")
     doors= models.CharField(max_length=20,default="Piece")
     sand= models.CharField(max_length=20,default="Sacks")
