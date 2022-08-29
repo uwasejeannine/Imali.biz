@@ -54,3 +54,9 @@ class Land(models.Model):
     def full_name(self):
         return f"{self.first_name} {self.last_name}"
 
+     
+    def land(self):
+        return Land.objects.filter(land_id=self).count()
+    
+    def land(self):
+        return list(Land.objects.filter(land_id=self))
