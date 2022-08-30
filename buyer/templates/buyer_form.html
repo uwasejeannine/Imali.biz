@@ -74,14 +74,17 @@ font-weight: bold;
         padding-top: 40px;
       }
 
-      .container {
-        /* margin-left: 200px; */
-        width: 600px;
+      .container1 {
+        margin-left: 80px;
+        width: 500px;
         font-size: 15px;
         border-radius: 10px;
-        margin-right: 57%;
-        /* border: 0.5px solid #000000;
-       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
+        margin-right: 60%;
+        border: 0.5px solid #e9e1e1;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       padding: 3%;
+   
+
       }
       
       input {
@@ -161,7 +164,7 @@ table {
 td {
   text-align: center;
 }
-      .footer{
+  .footer{
   background-color: #010203;
   bottom: 0;
   width: 100%;
@@ -244,8 +247,8 @@ td {
         </div>
       </nav>
       <h1 class="head">Dear  User, congraturations on selecting  your new appartment, now you can buy or rent</h1>    <!-- <form section -->
-    <div class="container">
-      <h1 class="head">Buy your beautiful house</h1>
+    <div class="container1">
+      <h4>Buy your beautiful house</h4>
       <form method="POST" enctype="multipart/form-data">
         {%csrf_token%} {{form.as_p}}
         <p style="color:#0FA958;">To check your Land api click *561# provided by RLMUA</p>
@@ -257,26 +260,26 @@ td {
       </form>
     </div>
     </div>
-    <div style="text-align: center;margin-top:-830px; margin-left: 500px;">
-      <img src="{% static 'Images/buy.jpg' %}" style="border-radius: 30px; width:80%;margin-left: 150px;" class="card-img-top" alt="...">
-      <div class="row" style="padding:2px;margin-left: 25%;">
+    <div style="text-align: center;margin-top:-61%; margin-left: 500px;">
+      <img src="{% static 'Images/buy.jpg' %}" style="border-radius: 30px; width:77%;margin-left: 150px;" class="card-img-top" alt="...">
+      <div class="row" style="margin-left:25%;margin-top: 2%;">
         <div class="column">
-          <img src="{% static 'Images/buy1.jpg' %}" alt="Snow" style="width:50%">
+          <img src="{% static 'Images/image62.png' %}" alt="Snow" style="width:80%">
         </div>
         <div class="column">
-          <img src="{% static 'Images/buy2.jpg' %}" alt="Forest" style="width:50%">
+          <img src="{% static 'Images/image63.png' %}" alt="Forest" style="width:80%">
         </div>
         <div class="column">
-          <img src="{% static 'Images/buy2.jpg' %}" alt="Forest" style="width:40%">
+          <img src="{% static 'Images/buy1.jpg' %}" alt="Mountains" style="width:60%">
         </div>
-    </div>
+      </div>
   </div>
-  <a href=" {%url 'land'%}" class="btn bg-success" style="color:white; text-align: center;margin-left: 900px;"> Check our Lands</a>
+  <a href=" {%url 'land'%}" class="btn bg-success" style="color:white; text-align: center;margin-left: 900px;margin-top:1%;"> Check our Lands</a>
 
   <!-- The land on Master plan -->
 <div >
-  <h1 class="real" style="margin-top:1%;"> The land on Master plan </h1>
-  <p style="margin-left:10%;">A partment house plan: #4 Floors</p>
+  <h1 class="real" style="margin-top:6%;"> The land on Master plan </h1>
+  <p style="margin-left:10%;margin-top:5%;">A partment house plan: #4 Floors</p>
   <img src="{% static 'Images/image14.png' %}" class="card-img-top" style="width:55%;margin-right: 40%;" alt="...">
   <a href="" class="btn bg-success" style="color:white; text-align: center;margin-left: 900px; margin-top:-85%;">For Sale</a>
   <h1 style="margin-left: 900px; margin-top:-40%;">$5000</h1>
@@ -313,20 +316,73 @@ td {
       
           <!-- Right -->
           <div>
+    
+        <section class="">
+          <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->    
+            <div class="row mt-3">
+              <!-- Grid column -->
+              <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                <!-- Content -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  <i class="fas fa-gem me-3"></i>Imali.biz ltd
+                </h6>
+                <p>
+                  Smart apps to Match stakeholders in real estate to the buyer and sort out the inefficiencies of value chain in housing supply.                </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Services: 
+                </h6>
+                <p>
+                  <a href="{%url 'land'%}" class="text">Land</a>
+                </p>
+                <p>
+                  <a href="{%url 'investor'%}" class="text">Investor</a>
+                </p>
+                <p>
+                  <a href="{%url 'investor'%}" class="text">Developer</a>
+                </p>
+                <p>
+                  <a href="{%url 'buyer'%}" class="text">Buyer</a>
+                </p>
+              </div>
+              
+              <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Useful links
+                </h6>
+                <p>
+                  <a href="#!" class="text-reset">Pricing</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Settings</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Orders</a>
+                </p>
+                <p>
+                  <a href="#!" class="text-reset">Help</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                <!-- Links -->
+                <h6 class="text-uppercase fw-bold mb-4">
+                  Contact
+                </h6>
+                <p><i class="fas fa-home me-3"></i> Kicukiro Kigali Rwanda</p>
+                <p>
+                  <i class="fas fa-envelope me-3"></i>
+                  info@imali.biz
+                </p>
+                <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
+              </div>
+            </div>
+       <br><br><br>
+      
       <p>
-        
-        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-          <!-- Links -->
-          <h6 class="text-uppercase fw-bold mb-4">
-            Contact
-          </h6>
-          <p><i class="fas fa-home me-3"></i> Kicukiro Kigali Rwanda</p>
-          <p>
-            <i class="fas fa-envelope me-3"></i>
-            info@imali.biz
-          </p>
-          <!-- <p><i class="fas fa-phone me-3"></i> + 4447934762181</p> -->
-        </div>
         <img
         src="{% static 'Images/imalilogo.png' %}"
         alt="logo"
@@ -335,10 +391,10 @@ td {
         &copy; © Copyright 2010 - 2021, IMALI.biz Ltd</p>
       </footer>
     </div>
-  
-  </div>
 
-</div>
+  </div>
+  <!-- End of .container -->
+  <!-- End of .container -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

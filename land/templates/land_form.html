@@ -65,20 +65,25 @@ font-weight: bold;
       }
 
       .container {
-        margin-left:35px;
+        margin-left: 80px;
         width: 500px;
         font-size: 15px;
         border-radius: 10px;
-        margin-right: 700px;
+        margin-right: 60%;
+        border: 0.5px solid #e9e1e1;
+       box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       padding: 2%;
+       margin-top:3%;
     
       }
       input {
         width: 100%;
         outline: none;
         border: 1px solid;
-        padding: 1px;
-        border-radius: 5%;
-        background-color: white; 
+        font-size: 13px;
+        padding: 6px 8px;
+        border-radius: 5px;
+        background-color: white;
       }
  
   .button {
@@ -93,14 +98,13 @@ font-weight: bold;
         border-radius: 20px;
       }
   .button1{
-    width: 10%;
+        width: 10%;
         height: 20%;
-        margin-right: 160%;
         margin-top: 15%;
         color: #0FA958;
        border: 1px solid #0FA958;
         border-radius: 10px;
-        margin-left: 540px;
+        margin-left: 62%;
         margin-top:-40px
   }
   .real{
@@ -125,9 +129,6 @@ margin-top: 350px;
   .card-img-top{
     width: 100%;
   }
-
-  table, td, th {
-}
 
 table {
   border-collapse: collapse;
@@ -223,14 +224,14 @@ td {
       <p style="text-align:center;font-weight:bold;font-size: 20px;margin-top:2%;">Did you know you imali.biz can help you to get investors to your land? Give your land details to  get an investor</p>
     <!-- <form section -->
     <div class="container">
-      <h1 class="head">Land Regitration form</h1>
+      <h4>Land Regitration form</h4>
       <form method="POST" enctype="multipart/form-data">
         {%csrf_token%} {{form.as_p}}
         <p style="color:#0FA958;">To check your Land api click *561# provided by RLMUA</p>
       <input type="submit" value="Submit" class="button" />
       </form>
     </div>
-    <div style="text-align: center;margin-top:-800px; margin-left: 400px;">
+    <div style="text-align: center;margin-top:-70%; margin-left: 400px;">
       <p style="margin-right:100px;">Beutiful Plot for Sale in Kibagabaga,Kigali</p>
       <p class="button1">Price</p>
       <p style="margin-left: 520px;margin-top:-40px; font-weight: bold;">$7,000,000 </p>
@@ -248,20 +249,14 @@ td {
         <div class="column">
           <img src="{% static 'Images/image68.png' %}" alt="Mountains" style="width:60%">
         </div>
-        <div class="column">
-          <img src="{% static 'Images/image59.png' %}" alt="Mountains" style="width:60%">
-        </div>
-        <div class="column">
-          <img src="{% static 'Images/image68.png' %}" alt="Mountains" style="width:60%">
-        </div>
     </div>
   </div>
-  <a href=" {%url 'land'%}" class="btn bg-success" style="color:white; text-align: center;margin-left: 800px;"> Check Our Land</a>
+  <a href=" {%url 'land'%}" class="btn bg-success" style="color:white; text-align: center;margin-left: 800px;margin-top:2%;"> Check Our Land</a>
 
 
 
   <!-- The land on Master plan -->
-<div class="real" style="margin-top:2%;">
+<div class="real" style="margin-top:12%;">
   <h1> The land on Master plan </h1>
   <img src="{% static 'Images/image4.png' %}" class="card-img-top" style="width:95%" alt="...">
 </div>

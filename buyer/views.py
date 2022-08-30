@@ -44,7 +44,11 @@ def buyer(request):
 def buyerexplan(request):
     buyerexplan=Buyer.objects.all()
     return render(request,"buyerexplan.html", {"buyerexplan": buyerexplan})
+from django.contrib import messages
 
+def my_view(request):
+       if form.is_valid():
+          messages.success(request, 'Form submission successful')
 
 
 # Create your views here.
