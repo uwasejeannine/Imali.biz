@@ -45,4 +45,9 @@ def investorexplanation(request):
     return render(request,"invdetails.html", {"invdetails":invdetails})
 
 
+def documentation(request):
+    document=Investor.objects.all()
+    return render(request,"docmentation.html", {"document":document})
+
+
 # Create your views here.

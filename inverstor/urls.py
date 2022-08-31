@@ -1,6 +1,6 @@
 from django.urls import include, re_path
 from django.urls import path
-from .views import investor_form, investor_list, investor_profile, edit_investor, inverstor,investorexplanation
+from .views import documentation, investor_form, investor_list, investor_profile, edit_investor, inverstor,investorexplanation
 urlpatterns=[
     path("inverstor", inverstor, name="investor"),
     path("register/", investor_form, name="investor_form"),
@@ -8,5 +8,7 @@ urlpatterns=[
     path("profile/<int:id>/", investor_profile, name="investor_profile"),
     path("edit/<int:id>/", edit_investor, name="edit_investor"),
     path("invdetails", investorexplanation, name="investorexplanation"),
+    path("document", documentation, name="document"),
+
 
 ]
